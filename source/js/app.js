@@ -113,6 +113,12 @@ $("a[href='/continue']").click(function (event) {
   $(".register-two").fadeIn(500, false);
 });
 
+$("a[href='/back']").click(function (event) {
+  event.preventDefault();
+  $(".register-one").fadeIn(500, false);
+  $(".register-two").fadeOut(500, false);
+});
+
 $(document).ready(function () {
 
   $("#carousel-mobile").swiperight(function() {
