@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/build\/.gitignore",
+		"oF": 1
+		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -695,7 +701,7 @@
 	"displayValue": "alpha",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 519897862
+	"lastBuiltDate": 519898498
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
