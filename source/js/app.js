@@ -97,6 +97,8 @@ $(".search > input").blur(function () {
 $("a[href='/signin']").click(function (event) {
   event.preventDefault();
   $(".welcome").fadeOut(500, false);
+  $(".register-one").fadeOut(500, false);
+  $(".register-two").fadeOut(500, false);
   $(".signin").fadeIn(500, false);
 });
 

@@ -334,77 +334,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/source\/assets\/imgs\/feature.png": {
-		"ft": 32768,
-		"iS": 4414233,
-		"oA": 0,
-		"oAP": "\/build\/assets\/imgs\/feature.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
 	"\/source\/assets\/imgs\/google-play-store.png": {
 		"ft": 32768,
 		"iS": 13957,
 		"oA": 0,
 		"oAP": "\/build\/assets\/imgs\/google-play-store.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/assets\/imgs\/image-1.png": {
-		"ft": 32768,
-		"iS": 387791,
-		"oA": 0,
-		"oAP": "\/build\/assets\/imgs\/image-1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/assets\/imgs\/image-2.png": {
-		"ft": 32768,
-		"iS": 427136,
-		"oA": 0,
-		"oAP": "\/build\/assets\/imgs\/image-2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/assets\/imgs\/image-3.png": {
-		"ft": 32768,
-		"iS": 408307,
-		"oA": 0,
-		"oAP": "\/build\/assets\/imgs\/image-3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/assets\/imgs\/image-4.png": {
-		"ft": 32768,
-		"iS": 273432,
-		"oA": 0,
-		"oAP": "\/build\/assets\/imgs\/image-4.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/assets\/imgs\/image-5.png": {
-		"ft": 32768,
-		"iS": 37304,
-		"oA": 0,
-		"oAP": "\/build\/assets\/imgs\/image-5.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -422,11 +356,50 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/source\/assets\/imgs\/wrapper.png": {
+	"\/source\/assets\/imgs\/latest_tmp402295424": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/assets\/imgs\/latest_tmp402295424",
+		"oF": 0
+		},
+	"\/source\/assets\/imgs\/placeholders\/image-16x9.png": {
 		"ft": 32768,
-		"iS": 100180,
+		"iS": 0,
 		"oA": 0,
-		"oAP": "\/build\/assets\/imgs\/wrapper.png",
+		"oAP": "\/build\/assets\/imgs\/placeholders\/image-16x9.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/imgs\/placeholders\/image-4x3.png": {
+		"ft": 32768,
+		"iS": 6002,
+		"oA": 0,
+		"oAP": "\/build\/assets\/imgs\/placeholders\/image-4x3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/imgs\/placeholders\/video-16x9.png": {
+		"ft": 32768,
+		"iS": 11639,
+		"oA": 0,
+		"oAP": "\/build\/assets\/imgs\/placeholders\/video-16x9.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/imgs\/placeholders\/video-4x3.png": {
+		"ft": 32768,
+		"iS": 7382,
+		"oA": 0,
+		"oAP": "\/build\/assets\/imgs\/placeholders\/video-4x3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -723,7 +696,7 @@
 	"displayValue": "alpha",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 519901038
+	"lastBuiltDate": 519914264
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
