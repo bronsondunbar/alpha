@@ -323,11 +323,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/source\/assets\/imgs\/app-store.png": {
+		"ft": 32768,
+		"iS": 2298,
+		"oA": 0,
+		"oAP": "\/build\/assets\/imgs\/app-store.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/source\/assets\/imgs\/feature.png": {
 		"ft": 32768,
 		"iS": 4414233,
 		"oA": 0,
 		"oAP": "\/build\/assets\/imgs\/feature.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/assets\/imgs\/google-play-store.png": {
+		"ft": 32768,
+		"iS": 13957,
+		"oA": 0,
+		"oAP": "\/build\/assets\/imgs\/google-play-store.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -688,7 +710,7 @@
 		"oA": 0,
 		"oAP": "\/build\/css\/style.css",
 		"oF": 3,
-		"oS": 3,
+		"oS": 0,
 		"uL": 1
 		}
 	},
@@ -701,7 +723,7 @@
 	"displayValue": "alpha",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 519898498
+	"lastBuiltDate": 519901038
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
