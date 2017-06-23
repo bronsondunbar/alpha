@@ -1,0 +1,128 @@
+/* Navbar */
+
+.nav {
+
+  li {
+
+    @media (max-width: $mobileLarge) {
+
+      display: inline-block;
+
+    }
+
+  }
+
+}
+
+.navbar-default {
+
+	background: none;
+	border: none;
+
+  .navbar-nav {
+
+    li {
+
+      a {
+
+        color: $white;;
+        transition: $fastTransition;
+        padding-top: 20px;
+
+        &:hover, &:focus {
+
+          color: $lightBlue;
+
+        }
+
+      }
+
+    }
+
+    @media (max-width: $mobileLarge) {
+
+      margin: 7.5px 0;
+      float: left;
+
+    }
+
+  }
+
+  .navbar-right {
+
+
+    @media (max-width: $mobileLarge) {
+
+      float: right;
+
+    }
+
+  }
+
+  .navbar-text {
+
+    color: $white;;
+    transition: $fastTransition;
+    padding-top: 20px;
+
+  }
+
+  .navbar-brand {
+
+    color: $white;;
+    padding: 20px 15px 15px 15px;
+    height: auto;
+
+    &:hover, &:focus {
+
+      color: $lightBlue;
+
+    }
+
+  }
+
+  .navbar-toggle {
+
+    float: left;
+    margin-top: 14px;
+    border: none;
+    transition: $fastTransition;
+
+    &:hover, &:focus {
+
+      background: none;
+
+      .icon-bar {
+
+        background: $lightBlue;
+ 
+      }
+
+    }
+
+    .icon-bar {
+
+      background: $white;;
+      transition: $fastTransition;
+
+    }
+
+    @media (min-width: $tabletPortrait) {
+
+        display: block;
+
+    }
+
+    @media (max-width: $mobileLarge) {
+
+      float: none;
+
+    }
+
+  }
+
+}
+
+.navbar-header {
+  float: none;
+}

@@ -1,0 +1,33 @@
+
+/* Colours */
+
+$lightBlue: #06A9E1;
+$darkBlue: #0D3758;
+$darkerBlue: #000333;
+$white: #ffffff;
+
+$turquoise: #4BB4C2;
+$green: #32B391;
+$purple: #9A70CF;
+$pink: #E67474;
+
+/* Shadows */
+
+$lightBlueShadow: 0 0 20px rgba(6, 169, 225, 0.6);
+$darkBlueShadow: 0 0 20px rgba(13, 55, 88, 0.5);
+
+/* Transitions */
+
+$fastTransition: all 0.3s;
+
+/* Backgrounds */
+
+$wrapper: url("../assets/imgs/wrapper.png");
+
+/* Screen sizes */
+
+$desktop: 1920px;
+$laptop: 1440px;
+$tabletLandscape: 1024px;
+$tabletPortrait: 768px;
+$mobileLarge: 425px;

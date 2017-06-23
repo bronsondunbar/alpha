@@ -1,0 +1,17 @@
+/* Typography */
+
+h1, h2, h3, h4 {
+	font-family: "Poppins", Sans-Serif;
+	font-weight: 400;
+
+	@media (max-width: $mobileLarge) {
+
+		text-align: center;
+
+	}
+
+}
+
+h1 {
+	font-size: 48px;
+}
