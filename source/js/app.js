@@ -123,6 +123,8 @@ $("a[href='/back']").click(function (event) {
 
 $(document).ready(function () {
 
+  $("a").attr("data-ajax", "false");
+
   $("#carousel-mobile").swiperight(function() {
     $(this).carousel("prev");
     $(".fa-hand-o-up").css("display", "none");
