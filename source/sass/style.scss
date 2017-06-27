@@ -336,350 +336,80 @@ section[role="course"] {
 
 	form {
 
-		.welcome {
+		position: absolute;
+		top: 26vh;
+		z-index: 1029;
+		background: $darkBlue;
+		padding: 0 15px 15px 15px;
+		width: 100%;
 
-			position: absolute;
-			top: 26vh;
-			z-index: 1029;
-			background: $darkBlue;
-			padding: 0 15px 15px 15px;
-			width: 100%;
+		p {
 
-			p {
+			text-align: center;
 
-				text-align: center;
+		}
 
-			}
+		&:after {
 
-			&:after {
+			content: "";
+		    position: absolute;
+		    height: 0;
+		    width: 0;
+		    left: 100%;
+		    top: 35%;
+		    border: 40px solid transparent;
+		    border-left: 40px solid $darkBlue;
 
-				content: "";
+		    @media (max-width: $tabletPortrait) {
+
+				content:'';
 			    position: absolute;
-			    height: 0;
+			    top: 100%;
+			    left: 50%;
+			    margin-left: -50px;
 			    width: 0;
-			    left: 100%;
-			    top: 35%;
-			    border: 40px solid transparent;
-			    border-left: 40px solid $darkBlue;
-
-			    @media (max-width: $tabletPortrait) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
-
-			    @media (max-width: $mobileLarge) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
+			    height: 0;
+			    border-top: solid 40px $darkBlue;
+			    border-left: solid 40px transparent;
+			    border-right: solid 40px transparent;
 
 			}
 
-			@media (max-width: $tabletLandscape) {
+		    @media (max-width: $mobileLarge) {
 
-				top: 17vh;
-
-			}
-
-			@media (max-width: $tabletPortrait) {
-
-				position: relative;
-				padding: 15px;
-				top: 0;
-
-			}
-
-			@media (max-width: $mobileLarge) {
-
-				position: inherit;
-				padding: 15px;
+				content:'';
+			    position: absolute;
+			    top: 100%;
+			    left: 50%;
+			    margin-left: -50px;
+			    width: 0;
+			    height: 0;
+			    border-top: solid 40px $darkBlue;
+			    border-left: solid 40px transparent;
+			    border-right: solid 40px transparent;
 
 			}
 
 		}
 
-		.signin {
+		@media (max-width: $tabletLandscape) {
 
-			display: none;
-			position: absolute;
-			top: 21vh;
-			z-index: 1029;
-			background: $darkBlue;
-			padding: 0 15px 15px 15px;
-			width: 100%;
-
-			p {
-
-				text-align: center;
-
-			}
-
-			&:after {
-
-				content: "";
-			    position: absolute;
-			    height: 0;
-			    width: 0;
-			    left: 100%;
-			    top: 37%;
-    			border: 40px solid transparent;
-    			border-left: 40px solid $darkBlue;
-
-    			@media (max-width: $tabletPortrait) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
-
-			    @media (max-width: $mobileLarge) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
-
-			}
-
-			@media (max-width: $tabletLandscape) {
-
-				top: 17vh;
-
-			}
-
-			@media (max-width: $tabletPortrait) {
-
-				position: relative;
-				padding: 15px;
-				top: 0;
-
-			}
-
-			@media (max-width: $mobileLarge) {
-
-				position: inherit;
-				padding: 15px;
-
-			}
+			top: 17vh;
 
 		}
 
-		.register-one {
+		@media (max-width: $tabletPortrait) {
 
-			display: none;
-			position: absolute;
-			top: 9vh;
-			z-index: 1029;
-			background: $darkBlue;
-			padding: 0 15px 15px 15px;
-			width: 100%;
-
-			p {
-
-				text-align: center;
-
-			}
-
-			&:after {
-
-				content: "";
-			    position: absolute;
-			    height: 0;
-			    width: 0;
-			    left: 100%;
-			    top: 44%;
-			    border: 40px solid transparent;
-			    border-left: 40px solid $darkBlue;
-
-			    @media (max-width: $tabletPortrait) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
-
-			    @media (max-width: $mobileLarge) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
-
-			}
-
-			@media (max-width: $tabletLandscape) {
-
-				top: 7vh;
-
-			}
-
-			@media (max-width: $tabletPortrait) {
-
-				position: relative;
-				padding: 15px;
-				top: 0;
-
-			}
-
-			@media (max-width: $mobileLarge) {
-
-				position: inherit;
-				padding: 15px;
-
-			}
+			position: relative;
+			padding: 15px;
+			top: 0;
 
 		}
 
-		.register-two {
+		@media (max-width: $mobileLarge) {
 
-			display: none;
-			position: absolute;
-			top: 9vh;
-			z-index: 1029;
-			background: $darkBlue;
-			padding: 0 15px 15px 15px;
-			width: 100%;
-
-			p {
-
-				text-align: center;
-
-			}
-
-			&:after {
-
-				content: "";
-			    position: absolute;
-			    height: 0;
-			    width: 0;
-			    left: 100%;
-			    top: 44%;
-			    border: 40px solid transparent;
-			    border-left: 40px solid $darkBlue;
-
-			    @media (max-width: $tabletPortrait) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
-
-			    @media (max-width: $mobileLarge) {
-
-					content:'';
-				    position: absolute;
-				    top: 100%;
-				    left: 50%;
-				    margin-left: -50px;
-				    width: 0;
-				    height: 0;
-				    border-top: solid 40px $darkBlue;
-				    border-left: solid 40px transparent;
-				    border-right: solid 40px transparent;
-
-				}
-
-			}
-
-			.row {
-
-				margin: 0;
-
-				div {
-
-					.dropdown {
-
-						.dropdown-toggle {
-
-							width: 100%;
-
-						}
-
-					}
-
-				}
-
-			}
-
-			@media (max-width: $tabletLandscape) {
-
-				top: 1vh;
-
-			}
-
-			@media (max-width: $tabletPortrait) {
-
-				position: relative;
-				padding: 15px;
-				top: 0;
-
-			}
-
-			@media (max-width: $mobileLarge) {
-
-				position: inherit;
-				padding: 15px;
-
-			}
+			position: inherit;
+			padding: 15px;
 
 		}
 

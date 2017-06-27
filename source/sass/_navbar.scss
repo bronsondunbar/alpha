@@ -73,6 +73,12 @@
     padding: 20px 15px 15px 15px;
     height: auto;
 
+    img {
+
+      width: 40%;
+
+    }
+
     &:hover, &:focus {
 
       color: $lightBlue;

@@ -93,34 +93,6 @@ $(".search > input").blur(function () {
   
 });
 
-
-$("a[href='/signin']").click(function (event) {
-  event.preventDefault();
-  $(".welcome").fadeOut(500, false);
-  $(".register-one").fadeOut(500, false);
-  $(".register-two").fadeOut(500, false);
-  $(".signin").fadeIn(500, false);
-});
-
-$("a[href='/register']").click(function (event) {
-  event.preventDefault();
-  $(".welcome").fadeOut(500, false);
-  $(".signin").fadeOut(500, false);
-  $(".register-one").fadeIn(500, false);
-});
-
-$("a[href='/continue']").click(function (event) {
-  event.preventDefault();
-  $(".register-one").fadeOut(500, false);
-  $(".register-two").fadeIn(500, false);
-});
-
-$("a[href='/back']").click(function (event) {
-  event.preventDefault();
-  $(".register-one").fadeIn(500, false);
-  $(".register-two").fadeOut(500, false);
-});
-
 $(document).ready(function () {
 
   $("a").attr("data-ajax", "false");
