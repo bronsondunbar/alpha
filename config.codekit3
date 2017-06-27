@@ -385,7 +385,7 @@
 		"oAP": "\/build\/assets\/imgs\/image-3.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -755,7 +755,7 @@
 	"displayValue": "alpha-template",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 520258441
+	"lastBuiltDate": 520267846
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
