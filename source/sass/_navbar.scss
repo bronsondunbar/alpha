@@ -169,9 +169,10 @@
 
         div {
 
+          /* Base level */
+
           ul {
 
-            display: block;
             list-style-type: none;
             margin: 0 -15px 0 -5px;
             padding: 5px 0;
@@ -179,40 +180,105 @@
 
             .active {
 
-              background: $gray;
+              background: $lightBlue;
               color: $white;
 
             }
 
-            li {
+            /* Level 1 */
 
-              border-bottom: 1px solid $white;
-
-              a {
-
-                display: block;
-                padding: 15px 15px 15px 30px;
-                color: $white;
-                transition: $fastTransition;
-                text-decoration: none;
-
-              &:hover, &:focus {
-
-                background: $gray;
-                color: $white;
-
-              }
-
-              }
-
-              ul {
+            ul {
 
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                background: #ffffff;
+                background: $white;
                 border-right: 1px solid $lightGray;
                 box-shadow: inset $blackShadow;
+
+                /* Level 2 */
+
+                ul {
+
+                  list-style-type: none;
+                  margin: 0;
+                  padding: 0;
+                  background: $lightBlue;
+                  border-right: 1px solid $lightGray;
+                  box-shadow: inset $blackShadow;
+
+                  /* Level 3 */
+
+                  ul {
+
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    background: $lightGray;
+                    border-right: 1px solid $white;
+                    box-shadow: inset $blackShadow;
+
+                    li {
+
+                      border-bottom: 1px solid $white;
+
+                      a {
+
+                        display: block;
+                        padding: 15px 15px 15px 30px;
+                        color: $gray;
+                        transition: $fastTransition;
+                        text-decoration: none;
+
+                        &:hover, &:focus {
+
+                          background: none;
+                          color: $lightBlue;
+
+                        }
+
+                      }
+
+                      &:last-child {
+
+                        border: none;
+
+                      }
+
+                    }
+
+                  }
+
+                  li {
+
+                    border-bottom: 1px solid $lightGray;
+
+                    a {
+
+                      display: block;
+                      padding: 15px 15px 15px 30px;
+                      color: $white;
+                      transition: $fastTransition;
+                      text-decoration: none;
+
+                      &:hover, &:focus {
+
+                        background: none;
+                        color: $gray;
+
+                      }
+
+                    }
+
+                    &:last-child {
+
+                      border: none;
+
+                    }
+
+                  }
+
+                }
 
                 li {
 
@@ -221,7 +287,7 @@
                   a {
 
                     display: block;
-                    padding: 15px 15px 15px 60px;
+                    padding: 15px 15px 15px 30px;
                     color: $lightBlue;
                     transition: $fastTransition;
                     text-decoration: none;
@@ -243,6 +309,35 @@
 
                 }
 
+            }
+
+            li {
+
+              border-bottom: 1px solid $white;
+
+              a {
+
+                display: block;
+                padding: 15px 15px 15px 30px;
+                color: $white;
+                transition: $fastTransition;
+                text-decoration: none;
+                vertical-align: middle;
+
+                .fa-chevron-right {
+
+                  margin: 3px 15px 0 0;
+                  float: right;
+
+                }
+
+                &:hover, &:focus {
+
+                  background: $gray;
+                  color: $lightBlue;
+
+                }
+
               }
 
               &:last-child {
@@ -252,6 +347,37 @@
               }
 
             }
+
+          }
+
+        }
+
+      }
+
+      .breadcrumbs {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 5px 0;
+        font-size: 0.7em;
+        text-align: center;
+
+        li {
+
+          display: inline;
+          border: none;
+
+          &:after {
+
+            content: ":";
+            padding: 0 5px 0 5px;
+
+          }
+
+          &:last-child:after {
+
+            content: none;
+            padding: 0;
 
           }
 
@@ -279,5 +405,18 @@
       }
 
     }
+
+}
+
+.navbar-title {
+
+  text-transform: capitalize;
+  margin: 40px 0 20px 0;
+
+}
+
+.submenu {
+
+  display: none;
 
 }

@@ -555,7 +555,7 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/build\/index.html",
-		"oF": 0
+		"oF": 1
 		},
 	"\/source\/js\/app.js": {
 		"ft": 64,
@@ -768,7 +768,7 @@
 	"displayValue": "alpha-template",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 520267846
+	"lastBuiltDate": 520347372
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

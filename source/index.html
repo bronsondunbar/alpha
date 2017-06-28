@@ -40,28 +40,46 @@
 
   <body>
 
-    <div id="menuContent" class="navbar-content">
+    <div class="navbar-content">
       <div>
         <a href="#" class="navbar-content-close-btn">&times;</a>
 
-        <h1>Menu</h1>
+        <h1 class="navbar-title">Menu</h1>
 
         <div class="row">
           <div class="col-md-12">
-            <ul id="menu">
-              <li class="active">
-                <a href="#subMenuOne" data-toggle="collapse" data-parent="#menu" aria-expanded="true" aria-controls="subMenuOne"><i class="fa fa-th" aria-hidden="true"></i> Link</a>
+            <ul>
+              <li><a href="/level-one" class="navbar-content-item">Link 1 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
 
-                <ul id="subMenuOne" class="collapse in" aria-labelledby="submenu">
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
+                <ul class="submenus submenu">
+                  <li><a href="/level-two" class="navbar-content-sub-item">Level 1 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                    <ul class="submenus submenu">
+                      <li><a href="/level-three" class="navbar-content-sub-item">Level 2 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                      <ul class="submenus submenu">
+                        <li><a href="#">Level 3</a></li>
+                        <li><a href="#">Level 3</a></li>
+                        <li><a href="#">Level 3</a></li>
+                        <li><a href="/level-two" class="go-back">Back</a></li>
+                      </ul>
+
+                      <li><a href="#">Level 2</a></li>
+                      <li><a href="#">Level 2</a></li>
+                      <li><a href="/level-one" class="go-back">Back</a></li>
+                    </ul>
+
+                  <li><a href="#">Level 1</a></li>
+                  <li><a href="#">Level 1</a></li>
+                  <li><a href="/menu" class="go-back">Back</a></li>
                 </ul>
-              </li>
-              <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i> Link</a></li>
-              <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i> Link</a></li>
-              <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i> Link</a></li>
+
+              <li><a href="#" class="navbar-content-item">Link 2</a></li>
+              <li><a href="#" class="navbar-content-item">Link 3</a></li>
+              <li><a href="#" class="navbar-content-item">Link 4</a></li>
             </ul>
+
+            <!-- <ul class="breadcrumbs"></ul> -->
           </div>
         </div>
       </div>
