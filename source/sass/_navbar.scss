@@ -132,3 +132,152 @@
 .navbar-header {
   float: none;
 }
+
+.navbar-content {
+
+  background: $gray;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  z-index: 1050;
+  padding: 0;
+  transition: $fastTransition;
+  color: $white;
+  box-shadow: inset $blackShadow;
+
+    div {
+
+      h1 {
+
+        text-align: center;
+        color: $white;
+
+      }
+
+      img {
+
+        display: block;
+        margin: 30px auto;
+        width: 50%;
+
+      }
+
+      div {
+
+        div {
+
+          ul {
+
+            display: block;
+            list-style-type: none;
+            margin: 0 -15px 0 -5px;
+            padding: 5px 0;
+            box-shadow: inset $blackShadow;
+
+            .active {
+
+              background: $gray;
+              color: $white;
+
+            }
+
+            li {
+
+              border-bottom: 1px solid $white;
+
+              a {
+
+                display: block;
+                padding: 15px 15px 15px 30px;
+                color: $white;
+                transition: $fastTransition;
+                text-decoration: none;
+
+              &:hover, &:focus {
+
+                background: $gray;
+                color: $white;
+
+              }
+
+              }
+
+              ul {
+
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background: #ffffff;
+                border-right: 1px solid $lightGray;
+                box-shadow: inset $blackShadow;
+
+                li {
+
+                  border-bottom: 1px solid $lightGray;
+
+                  a {
+
+                    display: block;
+                    padding: 15px 15px 15px 60px;
+                    color: $lightBlue;
+                    transition: $fastTransition;
+                    text-decoration: none;
+
+                    &:hover, &:focus {
+
+                      background: none;
+                      color: $gray;
+
+                    }
+
+                  }
+
+                  &:last-child {
+
+                    border: none;
+
+                  }
+
+                }
+
+              }
+
+              &:last-child {
+
+                border: none;
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .navbar-content-close-btn {
+
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: $white;
+        z-index: 5;
+
+        &:hover, &:focus {
+
+          color: $white;
+          text-decoration: none;
+
+        }
+
+      }
+
+    }
+
+}
