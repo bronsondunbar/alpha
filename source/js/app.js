@@ -169,11 +169,9 @@ $(".navbar-content-item").click(function (event) {
       left: 0
     }, 500, 'linear');
 
-    console.log($(this).parents("li").next(".submenu").height());
-
     navbarLevel ++;
 
-    var currentNavbarItem = $(this).html();
+    var currentNavbarItem = $(this).text();
     $(".breadcrumbs").html("<li>" + currentNavbarItem + "</li>");
 
     var linkRef = linkRef.replace('-',' ');
@@ -198,7 +196,7 @@ $(".navbar-content-sub-item").click(function (event) {
       left: 0
     }, 500, 'linear');
 
-    var currentNavbarItem = $(this).html();
+    var currentNavbarItem = $(this).text();
     $(".breadcrumbs").html($(".breadcrumbs").html() + "<li>" + currentNavbarItem + "</li>");
 
     var linkRef = linkRef.replace('-',' ');
@@ -248,10 +246,6 @@ $(".go-back").click(function (event) {
 
   } 
 
-});
-
-$(document).ready(function () {
-  console.log($(".submenu").height());
 });
 
 
