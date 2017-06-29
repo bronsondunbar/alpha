@@ -611,6 +611,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/source\/js\/lib\/velocity.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/lib\/velocity-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/source\/sass\/_bootstrap.css": {
 		"aP": 1,
 		"bl": 0,

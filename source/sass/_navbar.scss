@@ -177,11 +177,12 @@
 
             position: absolute;
             z-index: 9999;
+            top: 0;
             left: 0;
             right: 0;
             list-style-type: none;
             margin: 0 -15px 0 -5px;
-            padding: 5px 0;
+            padding: 0;
             box-shadow: inset $blackShadow;
 
             .active {
@@ -197,6 +198,7 @@
 
                 position: absolute;
                 z-index: 9998;
+                display: block;
                 top: 0;
                 left: 400px;
                 right: 0;
@@ -343,7 +345,7 @@
                 color: $white;
                 transition: $fastTransition;
                 text-decoration: none;
-                vertical-align: middle;
+                min-height: 60px;
 
                 .fa-chevron-right {
 

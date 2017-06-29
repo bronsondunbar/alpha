@@ -4,6 +4,7 @@
 // @codekit-prepend 'lib/bootstrap.js'
 // @codekit-prepend 'lib/jquery.color.js'
 // @codekit-prepend 'lib/jquery.waypoints.js'
+// @codekit-prepend 'lib/velocity.js'
 
 $(document).ready(function () {
 
@@ -39,21 +40,21 @@ $(".search > input").focus(function () {
 
     case 1920:
 
-      $(".search").animate({
+      $(".search").velocity({
         width: "20%"
       }, 500);
       break;
 
     case 1440:
 
-      $(".search").animate({
+      $(".search").velocity({
         width: "20%"
       }, 500);
       break;
 
     case 1024:
 
-      $(".search").animate({
+      $(".search").velocity({
         width: "30%"
       }, 500);
       break;
@@ -70,21 +71,21 @@ $(".search > input").blur(function () {
 
     case 1920:
 
-      $(".search").animate({
+      $(".search").velocity({
         width: "10%"
       }, 500);
       break;
 
     case 1440:
 
-      $(".search").animate({
+      $(".search").velocity({
         width: "15%"
       }, 500);
       break;
 
     case 1024:
 
-      $(".search").animate({
+      $(".search").velocity({
         width: "20%"
       }, 500);
       break;
@@ -117,14 +118,14 @@ $(document).ready(function () {
     if (navbarContent === "350px") {
 
       $(".navbar-content > div").fadeOut(300, function () {
-        $(".navbar-content").animate({
+        $(".navbar-content").velocity({
           width : "0"
         }, 300);
       });
 
     } else if (navbarContent === "0px") {
 
-      $(".navbar-content").animate({
+      $(".navbar-content").velocity({
         "width" : "350px"
       }, 300, function () {
         $(".navbar-content > div").delay(500).fadeIn(300);
@@ -137,7 +138,7 @@ $(document).ready(function () {
   $(".navbar-content-close-btn").click(function (event) {
 
     $(".navbar-content > div").fadeOut(300, function () {
-      $(".navbar-content").animate({
+      $(".navbar-content").velocity({
         width : "0"
       }, 300);
     });
@@ -163,17 +164,12 @@ $(".navbar-content-item").click(function (event) {
   if (linkRef != "#") {
 
     $(this).parents("ul").children("li").hide();
-    // $(this).parents("li").next(".submenu").fadeIn();
-
-    var setHeight = $(this).parents("li").next(".submenu").height();
-    var setHeight = setHeight -55;
-
-    $(this).parents("li").next(".submenu").css("height", setHeight);
-
-    $(this).parents("li").next(".submenu").animate({
+    $(this).parents("li").next(".submenu").velocity({
       right: 0,
       left: 0
-    }, 500);
+    }, 500, 'linear');
+
+    console.log($(this).parents("li").next(".submenu").height());
 
     navbarLevel ++;
 
@@ -196,17 +192,11 @@ $(".navbar-content-sub-item").click(function (event) {
   if (linkRef != "#") {
 
     $(this).parents("ul").children("li").hide();
-    // $(this).parents("li").next(".submenu").fadeIn();
 
-    var setHeight = $(this).parents("li").next(".submenu").height();
-    var setHeight = setHeight -55;
-
-    $(this).parents("li").next(".submenu").css("height", setHeight);
-
-    $(this).parents("li").next(".submenu").animate({
+    $(this).parents("li").next(".submenu").velocity({
       right: 0,
       left: 0
-    }, 500);
+    }, 500, 'linear');
 
     var currentNavbarItem = $(this).html();
     $(".breadcrumbs").html($(".breadcrumbs").html() + "<li>" + currentNavbarItem + "</li>");
@@ -226,12 +216,10 @@ $(".go-back").click(function (event) {
 
   if (navbarLevel == 1) {
 
-    // $(this).closest("ul").hide();
-
-    $(this).closest("ul").animate({
+    $(this).closest("ul").velocity({
       display: "none",
       left: 400
-    }, 100);
+    }, 100, 'linear');
     $(this).parents("ul").parents("ul").children("li").fadeIn();
 
     navbarLevel --;
@@ -244,12 +232,11 @@ $(".go-back").click(function (event) {
 
     $(this).parents("ul").parents("ul").children("li").fadeIn();
     $(this).parents("ul").parents("ul").parents("ul").children("li").hide();
-    // $(this).closest("ul").hide();
 
-    $(this).closest("ul").animate({
+    $(this).closest("ul").velocity({
       display: "none",
       left: 400
-    }, 100);
+    }, 100, 'linear');
     $(this).parents("ul").parents("ul").children("li").fadeIn();
 
     navbarLevel --;
@@ -261,6 +248,10 @@ $(".go-back").click(function (event) {
 
   } 
 
+});
+
+$(document).ready(function () {
+  console.log($(".submenu").height());
 });
 
 
