@@ -163,7 +163,12 @@ $(".navbar-content-item").click(function (event) {
   if (linkRef != "#") {
 
     $(this).parents("ul").children("li").hide();
-    $(this).parents("li").next(".submenu").fadeIn();
+    // $(this).parents("li").next(".submenu").fadeIn();
+
+    $(this).parents("li").next(".submenu").animate({
+      right: 0,
+      left: 0
+    }, 500);
 
     navbarLevel ++;
 
@@ -186,7 +191,12 @@ $(".navbar-content-sub-item").click(function (event) {
   if (linkRef != "#") {
 
     $(this).parents("ul").children("li").hide();
-    $(this).parents("li").next(".submenu").fadeIn();
+    // $(this).parents("li").next(".submenu").fadeIn();
+
+    $(this).parents("li").next(".submenu").animate({
+      right: 0,
+      left: 0
+    }, 500);
 
     navbarLevel ++;
 
@@ -208,12 +218,17 @@ $(".go-back").click(function (event) {
 
   if (navbarLevel == 1) {
 
-    $(this).closest("ul").hide();
+    // $(this).closest("ul").hide();
+
+    $(this).closest("ul").animate({
+      display: "none",
+      left: 400
+    }, 100);
     $(this).parents("ul").parents("ul").children("li").fadeIn();
 
     navbarLevel --;
 
-    $(".breadcrumbs li:last").remove();
+    $(".breadcrumbs li:last-child").remove();
 
     $(".navbar-title").html(linkRef);
 
@@ -221,11 +236,17 @@ $(".go-back").click(function (event) {
 
     $(this).parents("ul").parents("ul").children("li").fadeIn();
     $(this).parents("ul").parents("ul").parents("ul").children("li").hide();
-    $(this).closest("ul").hide();
+    // $(this).closest("ul").hide();
+
+    $(this).closest("ul").animate({
+      display: "none",
+      left: 400
+    }, 100);
+    $(this).parents("ul").parents("ul").children("li").fadeIn();
 
     navbarLevel --;
 
-    $(".breadcrumbs li:last").remove();
+    $(".breadcrumbs li:last-child").remove();
 
     var linkRef = linkRef.replace('-',' ');
     $(".navbar-title").html(linkRef);
