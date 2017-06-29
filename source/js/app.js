@@ -165,6 +165,11 @@ $(".navbar-content-item").click(function (event) {
     $(this).parents("ul").children("li").hide();
     // $(this).parents("li").next(".submenu").fadeIn();
 
+    var setHeight = $(this).parents("li").next(".submenu").height();
+    var setHeight = setHeight -55;
+
+    $(this).parents("li").next(".submenu").css("height", setHeight);
+
     $(this).parents("li").next(".submenu").animate({
       right: 0,
       left: 0
@@ -193,12 +198,15 @@ $(".navbar-content-sub-item").click(function (event) {
     $(this).parents("ul").children("li").hide();
     // $(this).parents("li").next(".submenu").fadeIn();
 
+    var setHeight = $(this).parents("li").next(".submenu").height();
+    var setHeight = setHeight -55;
+
+    $(this).parents("li").next(".submenu").css("height", setHeight);
+
     $(this).parents("li").next(".submenu").animate({
       right: 0,
       left: 0
     }, 500);
-
-    navbarLevel ++;
 
     var currentNavbarItem = $(this).html();
     $(".breadcrumbs").html($(".breadcrumbs").html() + "<li>" + currentNavbarItem + "</li>");
