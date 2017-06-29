@@ -179,7 +179,7 @@
             z-index: 9999;
             top: 0;
             left: 0;
-            right: 0;
+            width: 100%;
             list-style-type: none;
             margin: 0 -15px 0 -5px;
             padding: 0;
@@ -201,7 +201,6 @@
                 display: block;
                 top: 0;
                 left: 400px;
-                right: 0;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -217,7 +216,6 @@
                   z-index: 9997;
                   top: 0;
                   left: 400px;
-                  right: 0;
                   list-style-type: none;
                   margin: 0;
                   padding: 0;
@@ -233,7 +231,6 @@
                     z-index: 9996;
                     top: 0;
                     left: 400px;
-                    right: 0;
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
@@ -377,6 +374,39 @@
             }
 
           }
+
+        }
+
+      }
+
+      .search {
+
+        width: 100%;
+        padding: 0 19px;
+
+        a {
+
+          position: absolute;
+          top: -1px;
+          right: 20px;
+          color: $white;
+          font-size: 1.5em;
+
+          &:hover, &:focus {
+
+            text-decoration: none;
+
+          }
+
+        }
+
+        .fa-search {
+
+          position: absolute;
+          top: 5px;
+          left: 20px;
+          color: $white;
+          font-size: 1.5em;
 
         }
 
