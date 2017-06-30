@@ -471,6 +471,12 @@
 		"oAP": "\/build\/course.html",
 		"oF": 0
 		},
+	"\/source\/explore-2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/explore-2.html",
+		"oF": 0
+		},
 	"\/source\/explore.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -571,6 +577,15 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/build\/js\/lib\/bootstrap-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/source\/js\/lib\/infinite.scroll.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/lib\/infinite.scroll-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

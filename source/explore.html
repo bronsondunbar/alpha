@@ -71,71 +71,13 @@
     </nav>
 
     <section role="welcome">
-      <div class="container waypoint">
+      <div class="container waypoint cards">
 
         <h1>Donec feugiat arcu vitae nibh tempus</h1>
 
         <div class="row">
 
-          <div class="col-md-3">
-            <a href="course.html">
-              <div class="course">
-                <img src="assets/imgs/image-1.png" class="img-responsive" alt="" />
-
-                <div class="course-caption">
-                  <h4>Ut fringilla odio eu metus consequat accumsan</h4>
-
-                  <a href="course.html" class="btn btn-default">Call to action</a>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-3">
-            <a href="course.html">
-              <div class="course">
-                <img src="assets/imgs/image-2.png" class="img-responsive" alt="" />
-
-                <div class="course-caption">
-                  <h4>Nam tincidunt dui non elementum mattis</h4>
-
-                  <a href="course.html" class="btn btn-default">Call to action</a>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-3">
-            <a href="course.html">
-              <div class="course">
-                <img src="assets/imgs/image-3.png" class="img-responsive" alt="" />
-
-                <div class="course-caption">
-                  <h4>Mauris porttitor lobortis ultricies</h4>
-
-                  <a href="course.html" class="btn btn-default">Call to action</a>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-3">
-            <a href="course.html">
-              <div class="course">
-                <img src="assets/imgs/image-4.png" class="img-responsive" alt="" />
-
-                <div class="course-caption">
-                  <h4>Etiam venenatis sodales condimentum</h4>
-
-                  <a href="course.html" class="btn btn-default">Call to action</a>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row">
+          <!-- Set one -->
 
           <div class="col-md-3">
             <a href="course.html">
@@ -194,7 +136,23 @@
           </div>
 
         </div>
+
       </div>
+
+      <!-- status elements -->
+      <div class="scroller-status">
+        <div class="infinite-scroll-request loader-ellips">
+          ...
+        </div>
+
+        <p class="infinite-scroll-last">End of content</p>
+        <p class="infinite-scroll-error">No more pages to load</p>
+      </div>
+
+      <!-- pagination has path -->
+      <p class="pagination">
+        <a class="pagination__next" href="explore-2.html">Next page</a>
+      </p>
 
     </section>
 
@@ -218,5 +176,14 @@
     </footer>
 
     <script src="js/app.js"></script>
+
+    <script>
+    $('.cards').infiniteScroll({
+        path: '.pagination__next',
+        append: '.row',
+        status: '.scroller-status',
+        hideNav: '.pagination',
+      });
+    </script>
   </body>
 </html>

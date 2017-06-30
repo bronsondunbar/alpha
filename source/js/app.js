@@ -5,6 +5,7 @@
 // @codekit-prepend 'lib/jquery.color.js'
 // @codekit-prepend 'lib/jquery.waypoints.js'
 // @codekit-prepend 'lib/velocity.js'
+// @codekit-prepend 'lib/infinite.scroll.js'
 
 $(document).ready(function () {
 
@@ -232,6 +233,11 @@ $(".go-back").click(function (event) {
     $(".navbar-title").html(linkRef);
 
   }
+});
+
+$(".panel-heading").click(function (event) {
+  $(".panel-heading").removeClass("open");
+  $(this).addClass("open");
 });
 
 
