@@ -5,7 +5,6 @@
 // @codekit-prepend 'lib/jquery.color.js'
 // @codekit-prepend 'lib/jquery.waypoints.js'
 // @codekit-prepend 'lib/velocity.js'
-// @codekit-prepend 'lib/infinite.scroll.js'
 
 $(document).ready(function () {
 
