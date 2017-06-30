@@ -629,6 +629,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/source\/js\/lib\/velocity.ui.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/js\/lib\/velocity.ui-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/source\/sass\/_bootstrap.css": {
 		"aP": 1,
 		"bl": 0,
@@ -786,7 +795,7 @@
 	"displayValue": "alpha-template",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 520440852
+	"lastBuiltDate": 520521462
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
