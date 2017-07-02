@@ -15,12 +15,6 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -795,7 +789,7 @@
 	"displayValue": "alpha-template",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 520521462
+	"lastBuiltDate": 520692044
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
