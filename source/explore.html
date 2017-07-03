@@ -475,19 +475,21 @@
     <!-- https://stackoverflow.com/questions/23180375/fade-in-div-when-its-scrolled-into-viewport -->
 
     <script>
-      $(".row").scroll(function () {
-          console.log("Hello")
-          console.log($(window).scrollTop());
-          var topDivHeight = $(".test").height();
-          var viewPortSize = $(window).height();
+      $(document).ready(function () {
+        $('html, body').scroll(function () {
+            console.log("Hello")
+            console.log($(window).scrollTop());
+            var topDivHeight = $(".test").height();
+            var viewPortSize = $(window).height();
 
-          var triggerAt = 150;
-          var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+            var triggerAt = 150;
+            var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
 
-          if ($(window).scrollTop() >= triggerHeight) {
-              $('.hideme').css('visibility', 'visible').hide().fadeIn();
-              $(this).off('scroll');
-          }
+            if ($(window).scrollTop() >= triggerHeight) {
+                $('.hideme').css('visibility', 'visible').hide().fadeIn();
+                $(this).off('scroll');
+            }
+        });
       });
     </script>
 

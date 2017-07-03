@@ -15,6 +15,12 @@
 		"oAP": "\/build\/.gitignore",
 		"oF": 1
 		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -569,15 +575,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/source\/js\/lib\/infinite.scroll.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/js\/lib\/infinite.scroll-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/source\/js\/lib\/jquery.1.12.4.js": {
 		"ft": 64,
 		"mi": 1,
@@ -789,7 +786,7 @@
 	"displayValue": "alpha-template",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-greg",
-	"lastBuiltDate": 520692044
+	"lastBuiltDate": 520780636
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
