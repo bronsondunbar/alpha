@@ -75,7 +75,7 @@
 
         <h1>Donec feugiat arcu vitae nibh tempus</h1>
 
-        <div class="row test">
+        <div class="row courses">
 
           <!-- Set one -->
 
@@ -137,7 +137,7 @@
 
         </div>
 
-        <div class="row hideme">
+        <div class="row courses">
 
           <!-- Set two -->
 
@@ -199,7 +199,7 @@
 
         </div>
 
-        <div class="row hideme">
+        <div class="row courses">
 
           <!-- Set two -->
 
@@ -261,7 +261,7 @@
 
         </div>
 
-        <div class="row hideme">
+        <div class="row courses">
 
           <!-- Set two -->
 
@@ -323,7 +323,7 @@
 
         </div>
 
-        <div class="row hideme">
+        <div class="row courses">
 
           <!-- Set two -->
 
@@ -385,7 +385,7 @@
 
         </div>
 
-        <div class="row hideme">
+        <div class="row courses">
 
           <!-- Set two -->
 
@@ -471,27 +471,5 @@
     </footer>
 
     <script src="js/app.js"></script>
-
-    <!-- https://stackoverflow.com/questions/23180375/fade-in-div-when-its-scrolled-into-viewport -->
-
-    <script>
-      $(document).ready(function () {
-        $('html, body').scroll(function () {
-            console.log("Hello")
-            console.log($(window).scrollTop());
-            var topDivHeight = $(".test").height();
-            var viewPortSize = $(window).height();
-
-            var triggerAt = 150;
-            var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
-
-            if ($(window).scrollTop() >= triggerHeight) {
-                $('.hideme').css('visibility', 'visible').hide().fadeIn();
-                $(this).off('scroll');
-            }
-        });
-      });
-    </script>
-
   </body>
 </html>

@@ -637,6 +637,12 @@ section[role="course"] {
 
 }
 
+.courses {
+
+	opacity: 0;
+
+}
+
 @media (max-width: $mobileLarge) {
 
 	.figure {
@@ -648,10 +654,6 @@ section[role="course"] {
 
 	}
 
-}
-
-.hideme {
-	visibility:hidden;
 }
 
 
