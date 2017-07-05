@@ -46,7 +46,7 @@ $(document).ready(function () {
 
       $(".navbar-content > div").fadeOut(300, function () {
         $(".navbar-content").velocity({
-          width : "0"
+          "width" : "0px"
         }, 200);
       });
 
