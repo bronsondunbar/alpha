@@ -414,10 +414,14 @@
 
       .breadcrumbs {
 
+        position: absolute;
+        left: 0;
+        bottom: 0;
         list-style-type: none;
         margin: 0;
         padding: 5px 0 15px;
         text-align: center;
+        width: 100%;
 
         li {
 
