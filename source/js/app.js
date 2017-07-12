@@ -13,9 +13,30 @@ $(document).ready(function () {
 
   $("body").waypoint(function() {
 
-      $(".navbar-default").animate({
-          backgroundColor : "transparent"
+      $(".navbar-default").velocity({
+          backgroundColor : "#0D3758",
+          backgroundColorAlpha : 0
       }, 100);
+
+      $(".navbar-default .navbar-nav li a").velocity({
+        color: "#06A9E1"
+      }, 10);
+
+      $(".navbar-default .navbar-toggle .icon-bar").velocity({
+        backgroundColor: "#06A9E1"
+      }, 10);
+
+      $(".search .fa-search").velocity({
+        color: "#06A9E1"
+      }, 10);
+
+      $(".search input").velocity({
+        borderBottomColor: "#06A9E1"
+      }, 10);
+
+      $(".search a").velocity({
+        color: "#06A9E1"
+      }, 10);
 
   }, {
       offset: "-1"
@@ -24,10 +45,30 @@ $(document).ready(function () {
 
   $(".waypoint").waypoint(function() {
  
-      $(".navbar-default").animate({
-          backgroundColor : "rgba(13, 55, 86, 1)"
+      $(".navbar-default").velocity({
+          backgroundColor : "#0D3758",
+          backgroundColorAlpha : 1
       }, 100);
 
+      $(".navbar-default .navbar-nav li a").velocity({
+        color: "#ffffff"
+      }, 10);
+
+      $(".navbar-default .navbar-toggle .icon-bar").velocity({
+        backgroundColor: "#ffffff"
+      }, 10);
+
+      $(".search .fa-search").velocity({
+        color: "#ffffff"
+      }, 10);
+
+      $(".search input").velocity({
+        borderBottomColor: "#ffffff"
+      }, 10);
+
+      $(".search a").velocity({
+        color: "#ffffff"
+      }, 10);
 
   }, {
       offset: "1"

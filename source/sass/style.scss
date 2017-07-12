@@ -15,9 +15,9 @@
 body {
 
 	background: #0d3758;
-	background: $blueGradient;
+	background: $grayGradient;
 	overflow-x: hidden;
-	color: $white;
+	color: $gray;
 	min-height: 100vh;
 
 	p {
@@ -125,7 +125,7 @@ section {
 
 }
 
-section[role="welcome"] {
+section[role="default"] {
 
 	padding: 80px 0 30px;
 	min-height: 100vh;
@@ -135,12 +135,27 @@ section[role="welcome"] {
 		h1 {
 
 			text-align: center;
+			color: $darkBlue;
 
 		}
 
 		.row {
 
 			div {
+
+				div {
+
+					form {
+
+						h1 {
+
+							color: $white;
+
+						}
+
+					}
+
+				}
 
 				&:nth-of-type(2) {
 
@@ -209,6 +224,8 @@ section[role="highlight"] {
 
 			div {
 
+				color: $white;
+
 				h2 {
 
 					text-align: center;
@@ -262,6 +279,7 @@ section[role="course"] {
 				h2 {
 
 					text-align: center;
+					color: $darkBlue;
 
 				}
 
@@ -274,15 +292,27 @@ section[role="course"] {
 
 						text-align: center;
 
+						a {
+
+							color: $darkBlue;
+
+						}
+
 					}
 
 					ul {
 
 						list-style-type: none;
-						border-top: 1px solid $white;
-						border-bottom: 1px solid $white;
+						border-top: 1px solid $darkBlue;
+						border-bottom: 1px solid $darkBlue;
 						padding: 15px 0;
 						width: 100%;
+
+						li {
+
+							color: $darkBlue;
+
+						}
 
 					}
 
@@ -344,6 +374,30 @@ section[role="course"] {
 	@media (max-width: $mobileLarge) {
 
 		padding: 60px 0 30px;
+
+	}
+
+}
+
+section[role="explore"] {
+
+	.container {
+
+		.row {
+
+			div {
+
+				color: $gray;
+
+				h1 {
+
+					color: $darkBlue;
+
+				}
+
+			}
+
+		}
 
 	}
 
@@ -522,7 +576,7 @@ section[role="course"] {
 			padding: 0 10px 0 0;
 
 			.fa-star, .fa-star-o, .fa-star-half-o,  {
-				color: $white;
+				color: $darkBlue;
 			}
 
 			&:last-child {
@@ -538,7 +592,7 @@ section[role="course"] {
 			li {
 
 				display: block;
-				border-bottom: 1px solid $white;
+				border-bottom: 1px solid $darkBlue;
 
 				ul {
 
@@ -553,7 +607,7 @@ section[role="course"] {
 
 						.fa-star, .fa-star-o, .fa-star-half-o {
 							font-size: 1.5em;
-							color: $white;
+							color: $darkBlue;
 						}
 
 					}
@@ -579,7 +633,7 @@ section[role="course"] {
 
 	position: static;
 	text-align: center;
-	color: $white;
+	color: $gray;
 	padding: 0 0 15px 0;
 
 	.container {
@@ -604,6 +658,12 @@ section[role="course"] {
 				&:last-child {
 
 					padding: 0;
+
+				}
+
+				a {
+
+					color: $gray;
 
 				}
 
