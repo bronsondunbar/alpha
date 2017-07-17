@@ -26,15 +26,15 @@ $(document).ready(function () {
         backgroundColor: "#06A9E1"
       }, 10);
 
-      $(".search .fa-search").velocity({
+      $(".navbar-header > .search > .fa-search").velocity({
         color: "#06A9E1"
       }, 10);
 
-      $(".search input").velocity({
+      $(".navbar-header > .search > div > input").velocity({
         borderBottomColor: "#06A9E1"
       }, 10);
 
-      $(".search a").velocity({
+      $(".navbar-header > .search > a").velocity({
         color: "#06A9E1"
       }, 10);
 
@@ -58,15 +58,15 @@ $(document).ready(function () {
         backgroundColor: "#ffffff"
       }, 10);
 
-      $(".search .fa-search").velocity({
+      $(".navbar-header > .search > .fa-search").velocity({
         color: "#ffffff"
       }, 10);
 
-      $(".search input").velocity({
+      $(".navbar-header > .search > div > input").velocity({
         borderBottomColor: "#ffffff"
       }, 10);
 
-      $(".search a").velocity({
+      $(".navbar-header > .search > a").velocity({
         color: "#ffffff"
       }, 10);
 
@@ -239,21 +239,21 @@ $(".navbar-header > .search > input").focus(function () {
 
     case 1920:
 
-      $(".search").velocity({
+      $(".navbar-header > .search").velocity({
         width: "20%"
       }, 500);
       break;
 
     case 1440:
 
-      $(".search").velocity({
+      $(".navbar-header > .search").velocity({
         width: "20%"
       }, 500);
       break;
 
     case 1024:
 
-      $(".search").velocity({
+      $(".navbar-header > .search").velocity({
         width: "30%"
       }, 500);
       break;
@@ -270,21 +270,21 @@ $(".navbar-header > .search > input").blur(function () {
 
     case 1920:
 
-      $(".search").velocity({
+      $(".navbar-header > .search").velocity({
         width: "10%"
       }, 500);
       break;
 
     case 1440:
 
-      $(".search").velocity({
+      $(".navbar-header > .search").velocity({
         width: "15%"
       }, 500);
       break;
 
     case 1024:
 
-      $(".search").velocity({
+      $(".navbar-header > .search").velocity({
         width: "20%"
       }, 500);
       break;

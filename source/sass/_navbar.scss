@@ -27,13 +27,33 @@
 
         color: $lightBlue;;
         transition: $fastTransition;
-        padding-top: 20px;
+        padding-top: 25px;
 
         &:hover, &:focus {
 
           color: $darkBlue;
 
         }
+
+      }
+
+    }
+
+    .navbar-brand {
+
+      color: $lightBlue;
+      padding: 10px 15px 15px 15px;
+      height: auto;
+
+      img {
+
+        width: 30%;
+
+      }
+
+      &:hover, &:focus {
+
+        color: $darkBlue;
 
       }
 
@@ -67,30 +87,10 @@
 
   }
 
-  .navbar-brand {
-
-    color: $lightBlue;
-    padding: 20px 15px 15px 15px;
-    height: auto;
-
-    img {
-
-      width: 30%;
-
-    }
-
-    &:hover, &:focus {
-
-      color: $darkBlue;
-
-    }
-
-  }
-
   .navbar-toggle {
 
     float: left;
-    margin-top: 14px;
+    margin-top: 20px;
     border: none;
     transition: $fastTransition;
 
@@ -382,6 +382,12 @@
 
         width: 100%;
         padding: 0 19px;
+
+        input {
+
+          border-bottom: 1px solid $white;
+
+        }
 
         a {
 
