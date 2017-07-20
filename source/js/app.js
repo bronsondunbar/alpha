@@ -74,6 +74,8 @@ $(document).ready(function () {
         color: "#0D3758"
       }, 10);
 
+      $(".scroll-helper").hide();
+
   }, {
       offset: "1"
   });
