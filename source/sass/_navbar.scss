@@ -25,13 +25,13 @@
 
       a {
 
-        color: $lightBlue;;
+        color: $darkBlue;;
         transition: $fastTransition;
         padding-top: 25px;
 
         &:hover, &:focus {
 
-          color: $darkBlue;
+          color: $lightBlue;
 
         }
 
@@ -41,7 +41,7 @@
 
     .navbar-brand {
 
-      color: $lightBlue;
+      color: $darkBlue;
       padding: 10px 15px 15px 15px;
       height: auto;
 
@@ -53,7 +53,7 @@
 
       &:hover, &:focus {
 
-        color: $darkBlue;
+        color: $lightBlue;
 
       }
 
@@ -81,7 +81,7 @@
 
   .navbar-text {
 
-    color: $lightBlue;
+    color: $darkBlue;
     transition: $fastTransition;
     padding-top: 20px;
 
@@ -100,7 +100,7 @@
 
       .icon-bar {
 
-        background: $lightBlue;
+        background: $darkBlue;
  
       }
 
@@ -108,7 +108,7 @@
 
     .icon-bar {
 
-      background: $lightBlue;
+      background: $darkBlue;
       transition: $fastTransition;
 
     }

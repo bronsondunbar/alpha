@@ -13,7 +13,7 @@
 		border-top: none;
 		border-left: none;
 		border-right: none;
-		border-bottom: 1px solid $lightBlue;
+		border-bottom: 1px solid $darkBlue;
 		margin: 0;
 
 		&:hover, &:focus {
@@ -23,7 +23,7 @@
 			border-left: none;
 			border-top: none;
 			border-right: none;
-			border-bottom: 1px solid $lightBlue;
+			border-bottom: 1px solid $darkBlue;
 
 		}
 
@@ -34,7 +34,7 @@
 		position: absolute;
 		top: -1px;
 		right: 7px;
-		color: $lightBlue;
+		color: $darkBlue;
 		font-size: 1.5em;
 
 		&:hover, &:focus {
@@ -50,7 +50,7 @@
 		position: absolute;
 		top: 5px;
 		left: 7px;
-		color: $lightBlue;
+		color: $darkBlue;
 		font-size: 1.5em;
 
 	}
