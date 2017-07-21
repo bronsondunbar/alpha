@@ -1,5 +1,7 @@
 # Alpha template
 
-Template needs to be setup using CodeKit
+HTML5, CSS and JQuery template
+
+Template can be setup using CodeKit
 
 https://codekitapp.com/
