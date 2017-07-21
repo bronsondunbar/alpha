@@ -301,7 +301,7 @@ $(".navbar-header > .search > input").blur(function () {
 
 /* Scroll animation */
 
-$(document).scroll(function(){
+$(document).scroll(function (){
 
     $('.courses').each( function(i){
         
@@ -320,6 +320,51 @@ $(document).scroll(function(){
     }); 
 
 });
+
+/* Create menu from JSON data */
+
+$(document).ready(function () {
+  $.ajax({
+    url: 'data/data.json',
+    dataType: 'json',
+    success: function(data) {
+
+      var base = "";
+      var levelOne = "";
+
+      $.each(data.data, function(key, val) {
+
+        if (val.levels.length > 0) {
+          base = base + "<li class='children'>" + val.text + "</li>";
+        } else {
+          base = base + "<li>" + val.text + "</li>";
+        }
+        
+
+      });
+
+      $.each(data.data.levels, function(key, val) {
+
+        levelOne = "<li>" + val.text + "</li>";
+
+      });
+
+      /* Build base structure */
+
+      $("#test").html(base);
+
+      /* Check if there is level one */
+
+      if (levelOne != "") {
+        $(".levelOne").html(levelOne)
+      }
+
+    },
+    error: function () {
+      console.log("Error");
+    }
+  });
+})
 
 
 
