@@ -321,55 +321,6 @@ $(document).scroll(function (){
 
 });
 
-/* Create menu from JSON data */
-
-$(document).ready(function () {
-    var $ul = $('<ul></ul>');
-
-    $.ajax({
-      dataType: "json",
-      url: "data/data.json",
-      success: function(data) {
-        $.each(data.data, function (key, value) {
-          getData(value, $ul);
-        })
-      },
-      error: function () {
-        console.log("Error!")
-      }
-    });
-    
-    $("#test").html($ul);
-});
-
-function getData(item, $items) {
-    
-    if($.isArray(item)){
-
-        $.each(item, function (key, value) {
-          getData(value, $items);
-        });
-
-        return;
-    }
-    
-    if (item) {
-      var $li = $('<li />');
-
-      if (item.name) {
-        $li.append($('<a href="#">' + item.name + '</a>'));
-      }
-
-      if (item.child && item.child.length) {
-        var $sublist = $("<ul/>");
-        getData(item.child, $sublist)
-        $li.append($sublist);
-      }
-
-      $items.append($li);
-    }
-}
-
 
 
 
