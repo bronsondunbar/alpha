@@ -1,35 +1,26 @@
 {  
    "error" : 0,
    "message" : "Data fetched.",
-   "data" : [  
-      {  
-         "text": "Item 1",
-         "index": "0",
-         "levels": [
-            {
-               "text": "Item 1 - Sub item 1",
-               "index": "0"
-            },
-            {
-               "text": "Item 1 - Sub item 2",
-               "index": "1"
-            }
-         ]
+   "data": [{
+         "name": "XXX",
+            "child": [{
+                "name": "acb"
+            }, {
+                "name": "txy"
+            }]
       },
-      {  
-         "text": "Item 2",
-         "index": "1",
-         "levels": []
+      {
+         "name": "ZZZ",
+            "child": [{
+                "name": "ism"
+            }, {
+                "name": "sss"
+            }]
       },
-      {  
-         "text": "Item 3",
-         "index": "2",
-         "levels": [
-            {
-               "text": "Item 3 - Sub item 1",
-               "index": "0"
-            }
-         ]
-      }
-   ]
+      {
+         "name": "PPP"
+      },
+      {
+         "name": "QQQ"
+      }]
 }

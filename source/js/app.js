@@ -324,47 +324,51 @@ $(document).scroll(function (){
 /* Create menu from JSON data */
 
 $(document).ready(function () {
-  $.ajax({
-    url: 'data/data.json',
-    dataType: 'json',
-    success: function(data) {
+    var $ul = $('<ul></ul>');
 
-      var base = "";
-      var levelOne = "";
+    $.ajax({
+      dataType: "json",
+      url: "data/data.json",
+      success: function(data) {
+        $.each(data.data, function (key, value) {
+          getData(value, $ul);
+        })
+      },
+      error: function () {
+        console.log("Error!")
+      }
+    });
+    
+    $("#test").html($ul);
+});
 
-      $.each(data.data, function(key, val) {
+function getData(item, $items) {
+    
+    if($.isArray(item)){
 
-        if (val.levels.length > 0) {
-          base = base + "<li class='children'>" + val.text + "</li>";
-        } else {
-          base = base + "<li>" + val.text + "</li>";
-        }
-        
+        $.each(item, function (key, value) {
+          getData(value, $items);
+        });
 
-      });
+        return;
+    }
+    
+    if (item) {
+      var $li = $('<li />');
 
-      $.each(data.data.levels, function(key, val) {
-
-        levelOne = "<li>" + val.text + "</li>";
-
-      });
-
-      /* Build base structure */
-
-      $("#test").html(base);
-
-      /* Check if there is level one */
-
-      if (levelOne != "") {
-        $(".levelOne").html(levelOne)
+      if (item.name) {
+        $li.append($('<a href="#">' + item.name + '</a>'));
       }
 
-    },
-    error: function () {
-      console.log("Error");
+      if (item.child && item.child.length) {
+        var $sublist = $("<ul/>");
+        getData(item.child, $sublist)
+        $li.append($sublist);
+      }
+
+      $items.append($li);
     }
-  });
-})
+}
 
 
 
