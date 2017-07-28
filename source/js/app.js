@@ -49,7 +49,7 @@ $(document).ready(function () {
  
       $(".navbar-default").velocity({
           backgroundColor : "#ffffff",
-          backgroundColorAlpha : 1
+          backgroundColorAlpha : 0.9
       }, 100);
 
       $(".navbar-default").css("box-shadow", "0px 4px 41px -5px rgba(0,0,0,0.49)");
