@@ -1,8 +1,10 @@
+
 /* Typography */
 
 h1, h2, h3, h4 {
-	font-family: Arial, Sans-Serif;
-	font-weight: 400;
+
+	font-family: $titleFontFamily;
+	font-weight: $titleFontWeight;
 
 	@media (max-width: $mobileLarge) {
 
@@ -13,5 +15,13 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+
 	font-size: 48px;
+
+}
+
+body {
+
+	font-family: $bodyFontFamily;
+
 }
