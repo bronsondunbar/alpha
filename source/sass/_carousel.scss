@@ -149,6 +149,19 @@
 	text-align: center;
 	min-height: 170px;
 
+	a {
+
+		width: 100%;
+
+		&:hover, &:focus {
+
+			color: $white;
+
+
+		}
+
+	}
+
 	h4 {
 
 		align-self: center;
