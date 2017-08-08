@@ -48,7 +48,9 @@ a {
 
 
 form {
+
 	text-align: center;
+
 }
 
 input {
@@ -102,9 +104,11 @@ label {
 }
 
 .brand {
+
 	display: block;
 	margin: 0 auto;
 	width: 30%;
+
 }
 
 .wrapper {
@@ -370,6 +374,12 @@ label {
 		}
 
 	}
+
+}
+
+.tooltip-inner {
+
+	color: $white !important;
 
 }
 

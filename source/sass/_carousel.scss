@@ -199,27 +199,39 @@
 }
 
 .carousel > .carousel-inner > .item:nth-of-type(2) > .course > .course-caption {
+
 	background: $green;
+
 }
 
 .carousel > .carousel-inner > .item:nth-of-type(3) > .course > .course-caption {
+
 	background: $purple;
+
 }
 
 .carousel > .carousel-inner > .item:nth-of-type(4) > .course > .course-caption {
+
 	background: $pink;
+
 }
 
 .carousel > .carousel-inner > .item > .row > div:nth-of-type(2) > .course > .course-caption {
+
 	background: $green;
+
 }
 
 .carousel > .carousel-inner > .item > .row > div:nth-of-type(3) > .course > .course-caption {
+
 	background: $purple;
+
 }
 
 .carousel > .carousel-inner > .item > .row > div:nth-of-type(4) > .course > .course-caption {
+
 	background: $pink;
+
 }
 
 .course  {
@@ -242,6 +254,8 @@
 }
 
 .course:hover {
+
 	box-shadow: $lightBlueShadow;
 	cursor: pointer;
+
 }
