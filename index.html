@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Alpha template">
+    <meta name="author" content="Bronson Dunbar">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Alpha template</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="scroll-helper"></div>
+
+    <div class="navbar-content">
+      <div>
+        <a href="#" class="navbar-content-close-btn">&times;</a>
+
+        <h1 class="navbar-title">Menu</h1>
+
+        <div class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" />
+          <a href="#">&times;</a>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li><a href="/level-one" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 1 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                <ul class="submenus submenu">
+                  <li><a href="/level-two" class="navbar-content-sub-item"><i class="fa fa-bar-chart" aria-hidden="true"></i> Level 1 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                    <ul class="submenus submenu">
+                      <li><a href="/level-three" class="navbar-content-sub-item"><i class="fa fa-bolt" aria-hidden="true"></i> Level 2 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                      <ul class="submenus submenu">
+                        <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Level 3</a></li>
+                        <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Level 3</a></li>
+                        <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Level 3</a></li>
+                        <li><a href="/level-two" class="go-back">Back</a></li>
+                      </ul>
+
+                      <li><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Level 2</a></li>
+                      <li><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Level 2</a></li>
+                      <li><a href="/level-one" class="go-back">Back</a></li>
+                    </ul>
+
+                  <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Level 1</a></li>
+                  <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Level 1</a></li>
+                  <li><a href="/menu" class="go-back">Back</a></li>
+                </ul>
+
+              <li><a href="#" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 2</a></li>
+              <li><a href="#" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 3</a></li>
+              <li><a href="#" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="breadcrumbs"></ul>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="#"><img src="assets/svg/brand.svg" /></a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">Extra link</a></li>
+            <li>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </li>
+          </ul>
+
+          <div class="search hidden-xs">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" />
+            <a href="#">&times;</a>
+          </div>
+        </div>
+        
+      </div>
+    </nav>
+
+    <section role="default">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="wrapper waypoint">
+              <form>
+                <h1>Donec feugiat arcu vitae nibh tempus</h1>
+
+                <a href="#" class="btn btn-lg btn-default">Call to action</a>
+
+                <p><a href="#" id="register">Extra link</a></p>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-6 hidden-xs">
+            <div class="latest-course">
+              <img src="assets/imgs/latest.png" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section role="highlight">
+      <div class="container">
+        <div id="carousel-desktop" class="carousel slide hidden-sm hidden-xs" data-interval="false" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-1-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Ut fringilla odio eu metus consequat accumsan</h4>
+
+                        <a href="course.html" data-toggle="tooltip" title="Click here!" data-toggle="tooltip" title="Click here!" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-2-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Nam tincidunt dui non elementum mattis</h4>
+
+                        <a href="course.html" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-3-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Mauris porttitor lobortis ultricies</h4>
+
+                        <a href="course.html" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-4-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Etiam venenatis sodales condimentum</h4>
+
+                        <a href="course.html" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-1-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Ut fringilla odio eu metus consequat accumsan</h4>
+
+                        <a href="course.html" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-2-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Nam tincidunt dui non elementum mattis</h4>
+
+                        <a href="course.html" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-3-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Mauris porttitor lobortis ultricies</h4>
+
+                        <a href="course.html" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-3">
+                  <a href="course.html">
+                    <div class="course">
+                      <img src="assets/imgs/image-4-4x3.png" class="img-responsive" alt="" />
+
+                      <div class="course-caption">
+                        <h4>Etiam venenatis sodales condimentum</h4>
+
+                        <a href="course.html" class="btn btn-default">Call to action</a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <a class="left carousel-control hidden-sm" href="#carousel-desktop" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control hidden-sm" href="#carousel-desktop" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div id="carousel-mobile" class="carousel slide hidden-lg hidden-md" data-interval="false" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <a href="course.html">
+                <div class="course">
+                  <img src="assets/imgs/image-1-4x3.png" class="img-responsive" alt="" />
+
+                  <div class="course-caption">
+                    <h4>Ut fringilla odio eu metus consequat accumsan</h4>
+
+                    <a href="course.html" class="btn btn-default">Call to action</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="course.html">
+                <div class="course">
+                  <img src="assets/imgs/image-2-4x3.png" class="img-responsive" alt="" />
+
+                  <div class="course-caption">
+                    <h4>Nam tincidunt dui non elementum mattis</h4>
+
+                    <a href="course.html" class="btn btn-default">Call to action</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="course.html">
+                <div class="course">
+                  <img src="assets/imgs/image-3-4x3.png" class="img-responsive" alt="" />
+
+                  <div class="course-caption">
+                    <h4>Mauris porttitor lobortis ultricies</h4>
+
+                    <a href="course.html" class="btn btn-default">Call to action</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="course.html">
+                <div class="course">
+                  <img src="assets/imgs/image-4-4x3.png" class="img-responsive" alt="" />
+
+                  <div class="course-caption">
+                    <h4>Etiam venenatis sodales condimentum</h4>
+
+                    <a href="course.html" class="btn btn-default">Call to action</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-mobile" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-mobile" data-slide-to="1"></li>
+              <li data-target="#carousel-mobile" data-slide-to="2"></li>
+              <li data-target="#carousel-mobile" data-slide-to="3"></li>
+            </ol>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section role="explore">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="assets/imgs/image-1-16x9.png" class="feature img-responsive pull-right hidden-xs" />
+
+            <h1>Aenean sollicitudin eget neque eget faucibus</h1>
+
+            <p>Sed malesuada sapien sed ex rhoncus molestie. Quisque porta mauris eget nulla pulvinar cursus. Cras vulputate metus ut mauris laoreet molestie eu in velit. Nulla ipsum purus, sodales ut sapien quis, vestibulum suscipit sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+            <div class="btn-center">
+              <a href="explore.html" data-toggle="tooltip" title="Click here!" class="btn btn-lg btn-primary">Call to action</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+
+        <p>&copy; Bronson Dunbar</p>
+      </div>
+    </footer>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title">Class aptent taciti sociosqu</h3>
+          </div>
+
+          <div class="modal-body">
+            <p>Donec in augue tempor neque posuere aliquet. Vivamus porttitor fermentum nisl, ut euismod dolor cursus vel. Nunc porta tellus ex, eu venenatis neque viverra eget. Aenean sollicitudin eget neque eget faucibus. Cras rutrum fermentum odio, et viverra magna pharetra ac.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Call to action</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
