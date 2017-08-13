@@ -109,7 +109,7 @@ section[role="default"] {
 
 	@media (max-width: $mobileLarge) {
 
-		padding: 60px 0 30px;
+		padding: 200px 0 30px;
 
 	}
 
@@ -263,6 +263,13 @@ section[role="course"] {
 
 						}
 
+						@media (max-width: $mobileLarge) {
+
+							top: 35%;
+							left: 35%;
+
+						}
+
 					}
 
 				}
@@ -284,6 +291,8 @@ section[role="course"] {
 
 section[role="explore"] {
 
+	padding: 80px 0 30px;
+
 	.container {
 
 		.row {
@@ -292,15 +301,22 @@ section[role="explore"] {
 
 				color: $gray;
 
-				h1 {
-
-					color: $darkBlue;
-
-				}
-
 			}
 
 		}
+
+		h1 {
+
+			text-align: center;
+			color: $darkBlue;
+
+		}
+
+	}
+
+	@media (max-width: $mobileLarge) {
+
+		padding: 100px 0 30px;
 
 	}
 
