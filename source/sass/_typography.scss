@@ -6,7 +6,7 @@ h1, h2, h3, h4 {
 	font-family: $titleFontFamily;
 	font-weight: $titleFontWeight;
 
-	@media (max-width: $mobileLarge) {
+	@media (max-width: $mobileLargePortrait) {
 
 		text-align: center;
 

@@ -5,7 +5,13 @@
 
   li {
 
-    @media (max-width: $mobileLarge) {
+    @media (max-width: $mobileLargeLandscape) {
+
+      display: inline-block;
+
+    }
+
+    @media (max-width: $mobileLargePortrait) {
 
       display: inline-block;
 
@@ -58,7 +64,13 @@
 
       }
 
-      @media (max-width: $mobileLarge) {
+      @media (max-width: $mobileLargeLandscape) {
+
+        padding: 12px 15px 5px 15px;
+
+      }
+
+      @media (max-width: $mobileLargePortrait) {
 
         padding: 12px 15px 5px 15px;
 
@@ -66,7 +78,14 @@
 
     }
 
-    @media (max-width: $mobileLarge) {
+    @media (max-width: $mobileLargeLandscape) {
+
+      margin: 7.5px 0;
+      float: left;
+
+    }
+
+    @media (max-width: $mobileLargePortrait) {
 
       margin: 7.5px 0;
       float: left;
@@ -77,8 +96,13 @@
 
   .navbar-right {
 
+    @media (max-width: $mobileLargeLandscape) {
 
-    @media (max-width: $mobileLarge) {
+      float: right;
+
+    }
+
+    @media (max-width: $mobileLargePortrait) {
 
       float: right;
 
@@ -126,7 +150,13 @@
 
     }
 
-    @media (max-width: $mobileLarge) {
+    @media (max-width: $mobileLargeLandscape) {
+
+      float: none;
+
+    }
+
+    @media (max-width: $mobileLargePortrait) {
 
       float: none;
 
