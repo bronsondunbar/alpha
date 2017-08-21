@@ -291,6 +291,36 @@ section[role="course"] {
 
 section[role="explore"] {
 
+	.container {
+
+		.row {
+
+			div {
+
+				color: $gray;
+
+			}
+
+		}
+
+		h1 {
+
+			text-align: center;
+			color: $darkBlue;
+
+		}
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+
+	}
+
+}
+
+section[role="all"] {
+
 	padding: 80px 0 30px;
 
 	.container {
