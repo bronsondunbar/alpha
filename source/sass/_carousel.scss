@@ -137,7 +137,7 @@
 
 }
 
-.course-caption {
+.post-caption {
 
 	position: relative;
 	display: flex;
@@ -156,7 +156,6 @@
 		&:hover, &:focus {
 
 			color: $white;
-
 
 		}
 
@@ -198,43 +197,43 @@
 
 }
 
-.carousel > .carousel-inner > .item:nth-of-type(2) > .course > .course-caption {
+.carousel > .carousel-inner > .item:nth-of-type(2) > .post > .post-caption {
 
 	background: $green;
 
 }
 
-.carousel > .carousel-inner > .item:nth-of-type(3) > .course > .course-caption {
+.carousel > .carousel-inner > .item:nth-of-type(3) > .post > .post-caption {
 
 	background: $purple;
 
 }
 
-.carousel > .carousel-inner > .item:nth-of-type(4) > .course > .course-caption {
+.carousel > .carousel-inner > .item:nth-of-type(4) > .post > .post-caption {
 
 	background: $pink;
 
 }
 
-.carousel > .carousel-inner > .item > .row > div:nth-of-type(2) > .course > .course-caption {
+.carousel > .carousel-inner > .item > .row > div:nth-of-type(2) > .post > .post-caption {
 
 	background: $green;
 
 }
 
-.carousel > .carousel-inner > .item > .row > div:nth-of-type(3) > .course > .course-caption {
+.carousel > .carousel-inner > .item > .row > div:nth-of-type(3) > .post > .post-caption {
 
 	background: $purple;
 
 }
 
-.carousel > .carousel-inner > .item > .row > div:nth-of-type(4) > .course > .course-caption {
+.carousel > .carousel-inner > .item > .row > div:nth-of-type(4) > .post > .post-caption {
 
 	background: $pink;
 
 }
 
-.course  {
+.post  {
 
 	transition: $fastTransition;
 	margin: 30px 0 0 0;
@@ -253,7 +252,7 @@
 
 }
 
-.course:hover {
+.post:hover {
 
 	box-shadow: $lightBlueShadow;
 	cursor: pointer;

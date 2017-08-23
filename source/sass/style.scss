@@ -13,6 +13,7 @@
 @import 'modal';
 @import 'helper';
 @import 'sections';
+@import 'grid';
 
 body {
 
@@ -117,11 +118,8 @@ label {
 
 	form {
 
-		position: absolute;
-		top: 26vh;
-		z-index: 1029;
 		background: $darkBlue;
-		padding: 0 15px 15px 15px;
+		padding: 15px;
 		width: 100%;
 
 		p {
@@ -173,39 +171,12 @@ label {
 
 		}
 
-		@media (max-width: $tabletLandscape) {
-
-			top: 17vh;
-
-		}
-
-		@media (max-width: $tabletPortrait) {
-
-			position: relative;
-			padding: 15px;
-			top: 30vh;
-
-		}
-
-		@media (max-width: $mobileLargeLandscape) {
-
-			top: 0;
-
-		}
-
-		@media (max-width: $mobileLargePortrait) {
-
-			top: 10vh;
-			position: inherit;
-			padding: 15px;
-
-		}
 
 	}
 
 }
 
-.latest-course {
+.latest-image {
 
 	img {
 
@@ -414,7 +385,7 @@ label {
 
 }
 
-.courses {
+.posts {
 
 	opacity: 0;
 

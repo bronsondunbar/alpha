@@ -1,0 +1,32 @@
+
+/* Grid */
+
+.grid {
+
+	display: grid;
+	grid-gap: 15px;
+	padding: 30px;
+	grid-template-columns: 1fr 1fr;
+
+	.item {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+	}
+
+	@media (max-width: $mobileLargeLandscape) {
+
+  		grid-template-columns: 1fr;
+
+	}
+
+	@media (max-width: $mobileLargePortrait) {
+
+  		grid-template-columns: 1fr;
+
+	}
+
+}

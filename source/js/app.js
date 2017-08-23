@@ -303,7 +303,7 @@ $(".navbar-header > .search > input").blur(function () {
 
 $(document).scroll(function (){
 
-    $('.courses').each( function(i){
+    $('.posts').each( function(i){
         
         var bottom_of_object = $(this).offset().top + 300;
         var bottom_of_window = $(window).scrollTop() + $(window).height();
