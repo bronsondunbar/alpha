@@ -1,19 +1,15 @@
 
-@import 'bootstrap';
-@import 'font.awesome';
-@import 'font.awesome.animation';
-
-@import 'variables';
-@import 'typography';
-@import 'buttons';
-@import 'carousel';
-@import 'dropdown';
-@import 'navbar';
-@import 'search';
-@import 'modal';
-@import 'helper';
-@import 'sections';
-@import 'grid';
+@import "variables";
+@import "typography";
+@import "buttons";
+@import "carousel";
+@import "dropdown";
+@import "navbar";
+@import "search";
+@import "modal";
+@import "helper";
+@import "sections";
+@import "grid";
 
 body {
 
@@ -116,15 +112,41 @@ label {
 
 	position: relative;
 
-	form {
+	div {
 
 		background: $darkBlue;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
 		padding: 15px;
+		min-height: 245px;
+		min-width: 530px;
 		width: 100%;
+		text-align: center;
+
+		h1, h2, h3, h4 {
+
+			width: 100%;
+
+		}
+
+		a {
+
+			width: 100%;
+
+		}
 
 		p {
 
 			text-align: center;
+			width: 100%;
+
+			a {
+
+				text-align: center;
+
+			}
 
 		}
 
@@ -176,7 +198,7 @@ label {
 
 }
 
-.latest-image {
+.hero-image {
 
 	img {
 
