@@ -197,6 +197,11 @@ label {
 
 		}
 
+		@media (max-width: $mobileLargePortrait) {
+
+			min-width: 300px;
+
+		}
 
 	}
 

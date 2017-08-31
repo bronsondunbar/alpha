@@ -65,9 +65,21 @@ section[role="default"] {
 
 	}
 
+	@media (max-width: $tabletPortrait) {
+
+  		padding: 0;
+
+	}
+
+	@media (max-width: $mobileLargeLandscape) {
+
+  		padding: 0;
+
+	}
+
 	@media (max-width: $mobileLargePortrait) {
 
-		padding: 200px 0 30px;
+  		padding: 0;
 
 	}
 

@@ -10100,9 +10100,15 @@ section[role="default"] {
     color: #0D3758; }
   section[role="default"] .container .grid .item .wrapper div h1, section[role="default"] .container .grid .item .wrapper div h2, section[role="default"] .container .grid .item .wrapper div h3, section[role="default"] .container .grid .item .wrapper div h4 {
     color: #ffffff; }
+  @media (max-width: 768px) {
+    section[role="default"] {
+      padding: 0; } }
+  @media (max-width: 736px) {
+    section[role="default"] {
+      padding: 0; } }
   @media (max-width: 425px) {
     section[role="default"] {
-      padding: 200px 0 30px; } }
+      padding: 0; } }
 
 section[role="highlight"] {
   background: #0D3758;
@@ -10193,6 +10199,7 @@ section[role="all"] {
 .grid {
   display: grid;
   grid-gap: 15px;
+  overflow: hidden;
   padding: 30px;
   grid-template-columns: 1fr 1fr; }
   .grid .item {
@@ -10207,6 +10214,19 @@ section[role="all"] {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      .grid .item:nth-child(2) {
+        display: none; } }
+    @media (max-width: 736px) {
+      .grid .item:nth-child(2) {
+        display: none; } }
+    @media (max-width: 425px) {
+      .grid .item:nth-child(2) {
+        display: none; } }
+  @media (max-width: 768px) {
+    .grid {
+      height: 100vh;
+      grid-template-columns: 1fr; } }
   @media (max-width: 736px) {
     .grid {
       grid-template-columns: 1fr; } }
@@ -10333,6 +10353,9 @@ label {
           border-top: solid 40px #0D3758;
           border-left: solid 40px transparent;
           border-right: solid 40px transparent; } }
+    @media (max-width: 425px) {
+      .wrapper div {
+        min-width: 300px; } }
 
 .hero-image img {
   display: block;
