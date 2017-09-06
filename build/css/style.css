@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -10234,6 +10235,19 @@ section[role="all"] {
     .grid {
       grid-template-columns: 1fr; } }
 
+/* Radio buttons */
+.radio {
+  list-style-type: none;
+  margin: 15px 0 30px;
+  padding: 0;
+  display: block; }
+  .radio li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px 0 0; }
+  .radio li:last-child {
+    padding: 0; }
+
 body {
   background: #0d3758;
   background: linear-gradient(135deg, #F1F1F2 0%, #ffffff 100%);
@@ -10286,6 +10300,91 @@ label {
   @media (max-width: 1024px) {
     label {
       margin: 5px 0; } }
+
+input[type="radio"] + span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px; }
+
+input[type="radio"]:checked {
+  position: absolute;
+  left: -9999px; }
+
+input[type="radio"]:not(:checked) + span {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 25px;
+  cursor: pointer; }
+
+input[type="radio"]:checked + span {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 25px;
+  cursor: pointer; }
+
+input[type="radio"]:not(:checked) + span:before {
+  content: '○';
+  position: absolute;
+  left: -4px;
+  top: -18px;
+  font-size: 40px;
+  color: #e5e5e5;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px; }
+
+input[type="radio"]:checked + span:before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -18px;
+  font-size: 40px;
+  color: #e5e5e5;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px; }
+
+input[type="radio"]:not(:checked) + span:after {
+  content: '●';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -18px;
+  left: -1px;
+  font-size: 40px;
+  color: #06A9E1;
+  border-radius: 28px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="radio"]:checked + span {
+  color: #06A9E1; }
+
+input[type="radio"]:checked + span:after {
+  content: '●';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -18px;
+  left: -1px;
+  font-size: 40px;
+  color: #06A9E1;
+  border-radius: 28px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+input[type="radio"]:not(:checked) + span:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0); }
+
+input[type="radio"]:checked + span:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 .brand {
   display: block;
