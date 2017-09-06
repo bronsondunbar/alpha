@@ -7,32 +7,32 @@ $(document).ready(function () {
 
   $("body").waypoint(function() {
 
-      $(".navbar-default").velocity({
-          backgroundColor : "#ffffff",
-          backgroundColorAlpha : 0
-      }, 100);
+    $(".navbar-default").velocity({
+        backgroundColor : "#ffffff",
+        backgroundColorAlpha : 0
+    }, 100);
 
-      $(".navbar-default").css("box-shadow", "none");
+    $(".navbar-default").css("box-shadow", "none");
 
-      $(".navbar-default .navbar-nav li a").velocity({
-        color: "#0D3758"
-      }, 10);
+    $(".navbar-default .navbar-nav li a").velocity({
+      color: "#0D3758"
+    }, 10);
 
-      $(".navbar-default .navbar-toggle .icon-bar").velocity({
-        backgroundColor: "#0D3758"
-      }, 10);
+    $(".navbar-default .navbar-toggle .icon-bar").velocity({
+      backgroundColor: "#0D3758"
+    }, 10);
 
-      $(".navbar-header > .search > .fa-search").velocity({
-        color: "#0D3758"
-      }, 10);
+    $(".navbar-header > .search > .fa-search").velocity({
+      color: "#0D3758"
+    }, 10);
 
-      $(".navbar-header > .search > div > input").velocity({
-        borderBottomColor: "#0D3758"
-      }, 10);
+    $(".navbar-header > .search > div > input").velocity({
+      borderBottomColor: "#0D3758"
+    }, 10);
 
-      $(".navbar-header > .search > a").velocity({
-        color: "#0D3758"
-      }, 10);
+    $(".navbar-header > .search > a").velocity({
+      color: "#0D3758"
+    }, 10);
 
   }, {
 
@@ -43,34 +43,34 @@ $(document).ready(function () {
 
   $(".waypoint").waypoint(function() {
  
-      $(".navbar-default").velocity({
-          backgroundColor : "#ffffff",
-          backgroundColorAlpha : 0.9
-      }, 100);
+    $(".navbar-default").velocity({
+        backgroundColor : "#ffffff",
+        backgroundColorAlpha : 0.9
+    }, 100);
 
-      $(".navbar-default").css("box-shadow", "0px 4px 41px -5px rgba(0,0,0,0.49)");
+    $(".navbar-default").css("box-shadow", "0px 4px 41px -5px rgba(0,0,0,0.49)");
 
-      $(".navbar-default .navbar-nav li a").velocity({
-        color: "#0D3758"
-      }, 10);
+    $(".navbar-default .navbar-nav li a").velocity({
+      color: "#0D3758"
+    }, 10);
 
-      $(".navbar-default .navbar-toggle .icon-bar").velocity({
-        backgroundColor: "#0D3758"
-      }, 10);
+    $(".navbar-default .navbar-toggle .icon-bar").velocity({
+      backgroundColor: "#0D3758"
+    }, 10);
 
-      $(".navbar-header > .search > .fa-search").velocity({
-        color: "#0D3758"
-      }, 10);
+    $(".navbar-header > .search > .fa-search").velocity({
+      color: "#0D3758"
+    }, 10);
 
-      $(".navbar-header > .search > div > input").velocity({
-        borderBottomColor: "#0D3758"
-      }, 10);
+    $(".navbar-header > .search > div > input").velocity({
+      borderBottomColor: "#0D3758"
+    }, 10);
 
-      $(".navbar-header > .search > a").velocity({
-        color: "#0D3758"
-      }, 10);
+    $(".navbar-header > .search > a").velocity({
+      color: "#0D3758"
+    }, 10);
 
-      $(".scroll-helper").hide();
+    $(".scroll-helper").hide();
 
   }, {
 
