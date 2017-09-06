@@ -7,6 +7,7 @@
 // @codekit-prepend 'lib/velocity.js'
 // @codekit-prepend 'lib/velocity.ui.js'
 
+
 // @codekit-prepend 'templateNavbar.js'
 // @codekit-prepend 'templateAccordion.js'
 // @codekit-prepend 'templateCarousel.js'
@@ -20,7 +21,7 @@ $(document).ready(function () {
 
   $('a[data-toggle="tooltip"]').tooltip("show");
 
-})
+});
 
 
 

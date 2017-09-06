@@ -35,7 +35,9 @@ $(document).ready(function () {
       }, 10);
 
   }, {
-      offset: "-1"
+
+    offset: "-1"
+
   });
 
 
@@ -71,7 +73,9 @@ $(document).ready(function () {
       $(".scroll-helper").hide();
 
   }, {
-      offset: "1"
+
+    offset: "1"
+
   });
 
   /* Navbar actions */
