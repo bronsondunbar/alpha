@@ -232,29 +232,3 @@
 	background: $pink;
 
 }
-
-.post  {
-
-	transition: $fastTransition;
-	margin: 30px 0 0 0;
-
-	img {
-
-		transition: $fastTransition;
-
-		&:hover, &:focus {
-
-			filter: grayscale(100%);
-
-		}
-
-	}
-
-}
-
-.post:hover {
-
-	box-shadow: $lightBlueShadow;
-	cursor: pointer;
-
-}

@@ -3,60 +3,80 @@
 
 .grid {
 
-	display: grid;
-	grid-gap: 15px;
-	overflow: hidden;
-	padding: 30px;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
 
-	.item {
+  	.item {
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+    	display: flex;
+    	flex: 1;
+    	justify-content: center;
+    	align-items: center;
+    	flex-wrap: wrap;
+    	min-height: 150px;
+    	min-width: 20%;
+    	margin: 15px;
+    	transition: all 0.3s;
+    	cursor: pointer;
 
-		&:nth-child(2) {
+    	h1, h2, h3, h4 {
 
-			@media (max-width: $tabletPortrait) {
+      		text-align: center;
+      		font-weight: 400;
+      		width: 100%;
 
-				display: none;
+    	}
 
-			}
+    	p {
 
-			@media (max-width: $mobileLargeLandscape) {
+      		text-align: center;
+      		width: 100%;
 
-		  		display: none;
+    	}
 
-			}
+    	a {
 
-			@media (max-width: $mobileLargePortrait) {
+      		width: 100%;
 
-		  		display: none;
+    	}
 
-			}
+    	i {
 
-		}
+      		text-align: center;
+      		width: 100%;
+      		margin: 0 0 10px;
 
-	}
+    	}
 
-	@media (max-width: $tabletPortrait) {
+    	form {
 
-		height: 100vh;
-  		grid-template-columns: 1fr;
+      		width: 100%;
 
-	}
+    	}
 
-	@media (max-width: $mobileLargeLandscape) {
+  	}
 
-  		grid-template-columns: 1fr;
+ 	.card {
 
-	}
+    	background: $grayGradient;
+    	border: 1px solid $lightGray;
+    	padding: 15px;
 
-	@media (max-width: $mobileLargePortrait) {
+    	&:hover, &:focus {
 
-  		grid-template-columns: 1fr;
+      		background: $lightBlue;
+      		border: 1px solid $lightBlue;
+      		color: $white;
 
-	}
+      		.fa {
+
+        		color: $white;
+
+      		}
+
+    	}
+
+  	}
 
 }
