@@ -15,6 +15,7 @@
 @import "sections";
 @import "grid";
 @import "radio";
+@import "posts";
 
 body {
 
@@ -404,7 +405,7 @@ input[type="radio"] {
 
 		li {
 
-			display: inline;
+			display: inline-block;
 			padding: 0 10px 0 0;
 
 			.fa-star, .fa-star-o, .fa-star-half-o,  {
@@ -434,7 +435,7 @@ input[type="radio"] {
 
 					li {
 
-						display: inline;
+						display: inline-block;
 						border: none;
 
 						.fa-star, .fa-star-o, .fa-star-half-o {
@@ -513,12 +514,6 @@ input[type="radio"] {
 
 }
 
-.ui-loader {
-
-	display: none;
-
-}
-
 .pull-left {
 
 	margin: 15px 30px auto auto;
@@ -534,38 +529,6 @@ input[type="radio"] {
 .figure {
 
 	width: 20%;
-
-}
-
-.post  {
-
-	transition: $fastTransition;
-	margin: 30px 0 0 0;
-
-	img {
-
-		transition: $fastTransition;
-
-		&:hover, &:focus {
-
-			filter: grayscale(100%);
-
-		}
-
-	}
-
-}
-
-.post:hover {
-
-	box-shadow: $lightBlueShadow;
-	cursor: pointer;
-
-}
-
-.posts {
-
-	opacity: 0;
 
 }
 

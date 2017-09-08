@@ -72,7 +72,7 @@
 
         &:hover, &:focus {
 
-          color: lighten($lightBlue, 40%);
+          color: lighten($darkBlue, 40%);
 
         }
 
@@ -198,7 +198,7 @@
 
       &:hover, &:focus {
 
-        color: $lightBlue;
+        color: lighten($darkBlue, 40%);
 
       }
 

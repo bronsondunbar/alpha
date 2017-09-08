@@ -137,66 +137,6 @@
 
 }
 
-.post-caption {
-
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	background: $turquoise;
-	color: $white;
-	padding: 15px;
-	text-align: center;
-	min-height: 170px;
-
-	a {
-
-		width: 100%;
-
-		&:hover, &:focus {
-
-			color: $white;
-
-		}
-
-	}
-
-	h4 {
-
-		align-self: center;
-		width: 100%;
-
-	}
-
-	.btn-default {
-
-		background: $darkBlue;
-		align-self: flex-end;
-		width: 100%;
-		color: $white;
-  		border: 1px solid $darkBlue;
-  		transition: $fastTransition;
-
-  		&:hover, &:focus {
-
-  			background: none;
-			color: $white;
-  			border: 1px solid $white;
-  			transition: $fastTransition;
-  			box-shadow: none;
-
-  		}
-
-	}
-
-	@media (max-width: $tabletLandscape) {
-
-		min-height: 189px;
-
-	}
-
-}
-
 .carousel > .carousel-inner > .item:nth-of-type(2) > .post > .post-caption {
 
 	background: $green;
@@ -215,19 +155,19 @@
 
 }
 
-.carousel > .carousel-inner > .item > .row > div:nth-of-type(2) > .post > .post-caption {
+.carousel > .carousel-inner > .item > .grid > .item:nth-of-type(2) > .post-caption {
 
 	background: $green;
 
 }
 
-.carousel > .carousel-inner > .item > .row > div:nth-of-type(3) > .post > .post-caption {
+.carousel > .carousel-inner > .item > .grid > .item:nth-of-type(3) > .post-caption {
 
 	background: $purple;
 
 }
 
-.carousel > .carousel-inner > .item > .row > div:nth-of-type(4) > .post > .post-caption {
+.carousel > .carousel-inner > .item > .grid > .item:nth-of-type(4) > .post-caption {
 
 	background: $pink;
 

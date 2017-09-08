@@ -61,6 +61,12 @@ section[role="default"] {
 
 			}
 
+			@media (max-width: $mobileLargePortrait) {
+
+  				height: 100vh;
+
+			}
+
 		}
 
 	}
@@ -92,15 +98,28 @@ section[role="highlight"] {
 
 	.container {
 
-		.row {
+		.grid {
 
-			div {
+			.item {
 
 				color: $white;
 
-				h2 {
+				h1, h2, h3, h4 {
 
 					text-align: center;
+
+				}
+
+				img {
+
+					align-items: left;
+					align-content: left;
+
+				}
+
+				p {
+
+					width: auto;
 
 				}
 
@@ -144,101 +163,52 @@ section[role="post"] {
 
 	.container {
 
-		.row {
+		.grid {
 
-			div {
+			.item {
 
-				h2 {
+				p, ul {
+
+					text-align: justify;
+
+				}
+
+			}
+
+			.post-details {
+
+				text-align: center;
+
+				h1, h2, h3, h4 {
 
 					text-align: center;
 					color: $darkBlue;
 
 				}
 
-				.post-details {
+				p {
 
 					text-align: center;
-					padding: 25% 0 0 0;
 
-					p {
+					a {
 
-						text-align: center;
-
-						a {
-
-							color: $darkBlue;
-
-						}
-
-					}
-
-					ul {
-
-						list-style-type: none;
-						border-top: 1px solid $darkBlue;
-						border-bottom: 1px solid $darkBlue;
-						padding: 15px 0;
-						width: 100%;
-
-						li {
-
-							color: $darkBlue;
-
-						}
-
-					}
-
-					@media (max-width: $tabletPortrait) {
-
-						padding: 0;
-
-					}
-
-					@media (max-width: $mobileLargePortrait) {
-
-						padding: 5% 0 0 0;
+						color: $darkBlue;
 
 					}
 
 				}
 
-				.post-preview {
+				ul {
 
-					position: relative;
+					list-style-type: none;
+					border-top: 1px solid $darkBlue;
+					border-bottom: 1px solid $darkBlue;
+					padding: 15px 0;
+					text-align: center;
 
-					img {
+					li {
 
-						@media (max-width: $tabletPortrait) {
-
-							display: block;
-							margin: 0 auto;
-
-						}
-
-					}
-
-					.fa-play-circle {
-
-						position: absolute;
-						top: 37%;
-						left: 39%;
-						font-size: 10em;
-						opacity: 0.5;
-						color: $white;
-
-						@media (max-width: $tabletPortrait) {
-
-							top: 40%;
-							left: 40%;
-
-						}
-
-						@media (max-width: $mobileLargePortrait) {
-
-							top: 35%;
-							left: 35%;
-
-						}
+						color: $darkBlue;
 
 					}
 
@@ -246,6 +216,31 @@ section[role="post"] {
 
 			}
 
+			.post-preview {
+
+				position: relative;
+
+				img {
+
+					@media (max-width: $tabletPortrait) {
+
+						display: block;
+						margin: 0 auto;
+
+					}
+
+				}
+
+				.fa-play-circle {
+
+					position: absolute;
+					font-size: 10em;
+					opacity: 0.5;
+					color: $white;
+
+				}
+
+			}
 
 		}
 
@@ -298,13 +293,9 @@ section[role="all"] {
 
 				&:nth-of-type(2) {
 
-					.post {
+					.post-caption {
 
-						.post-caption {
-
-							background: $green;
-
-						}
+						background: $green;
 
 					}
 
@@ -312,13 +303,9 @@ section[role="all"] {
 
 				&:nth-of-type(3) {
 
-					.post {
+					.post-caption {
 
-						.post-caption {
-
-							background: $purple;
-
-						}
+						background: $purple;
 
 					}
 
@@ -326,13 +313,9 @@ section[role="all"] {
 
 				&:nth-of-type(4) {
 
-					.post {
+					.post-caption {
 
-						.post-caption {
-
-							background: $pink;
-
-						}
+						background: $pink;
 
 					}
 

@@ -19,7 +19,6 @@
     margin: 15px;
     padding: 15px;
     transition: all 0.3s;
-    cursor: pointer;
 
     h1, h2, h3, h4 {
 
@@ -29,13 +28,7 @@
 
     }
 
-    p {
-
-        width: 100%;
-
-    }
-
-    a {
+    form, p, a, ul {
 
         width: 100%;
 
@@ -49,26 +42,20 @@
 
     }
 
-    form {
-
-      width: 100%;
-
-    }
-
   }
 
-  .course {
+  .post {
 
     min-width: 25%;
     padding: 0;
 
-    @media (min-width: $tabletPortrait) {
+    @media (max-width: $tabletPortrait) {
 
         min-width: 50%;
 
     }
 
-    @media (min-width: $mobileLargePortrait) {
+    @media (max-width: $mobileLargePortrait) {
 
         min-width: 100%;
 
@@ -76,13 +63,13 @@
 
   }
 
-  @media (min-width: $tabletPortrait) {
+  @media (max-width: $tabletPortrait) {
 
     min-width: 50%;
 
   }
 
-  @media (min-width: $mobileLargePortrait) {
+  @media (max-width: $mobileLargePortrait) {
 
     min-width: 100%;
 
