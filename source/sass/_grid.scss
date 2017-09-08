@@ -3,80 +3,89 @@
 
 .grid {
 
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px -15px;
 
-  	.item {
+    .item {
 
-    	display: flex;
-    	flex: 1;
-    	justify-content: center;
-    	align-items: center;
-    	flex-wrap: wrap;
-    	min-height: 150px;
-    	min-width: 20%;
-    	margin: 15px;
-    	transition: all 0.3s;
-    	cursor: pointer;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 150px;
+      min-width: 15%;
+      margin: 15px;
+      padding: 15px;
+      transition: all 0.3s;
+      cursor: pointer;
 
-    	h1, h2, h3, h4 {
+      h1, h2, h3, h4 {
 
-      		text-align: center;
-      		font-weight: 400;
-      		width: 100%;
+          text-align: center;
+          font-weight: 400;
+          width: 100%;
 
-    	}
+      }
 
-    	p {
+      p {
 
-      		text-align: center;
-      		width: 100%;
+          width: 100%;
 
-    	}
+      }
 
-    	a {
+      a {
 
-      		width: 100%;
+          width: 100%;
 
-    	}
+      }
 
-    	i {
+      i {
 
-      		text-align: center;
-      		width: 100%;
-      		margin: 0 0 10px;
+          text-align: center;
+          width: 100%;
+          margin: 0 0 10px;
 
-    	}
+      }
 
-    	form {
+      form {
 
-      		width: 100%;
+        width: 100%;
 
-    	}
+      }
 
-  	}
+    }
 
- 	.card {
+    .course {
 
-    	background: $grayGradient;
-    	border: 1px solid $lightGray;
-    	padding: 15px;
+    min-width: 25%;
+    padding: 0;
 
-    	&:hover, &:focus {
+    @media (min-width: $tabletPortrait) {
 
-      		background: $lightBlue;
-      		border: 1px solid $lightBlue;
-      		color: $white;
+        min-width: 50%;
 
-      		.fa {
+    }
 
-        		color: $white;
+    @media (min-width: $mobileLargePortrait) {
 
-      		}
+        min-width: 100%;
 
-    	}
+    }
 
-  	}
+    }
+
+    @media (min-width: $tabletPortrait) {
+
+      min-width: 50%;
+
+  }
+
+  @media (min-width: $mobileLargePortrait) {
+
+      min-width: 100%;
+
+  }
 
 }
