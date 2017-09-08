@@ -3,13 +3,26 @@
 
 .nav {
 
+  min-height: 80px;
+
   li {
+
+    a {
+
+      img {
+
+        max-width: 100%;
+
+      }
+
+    }
 
     @media (max-width: $mobileLargeLandscape) {
 
       display: inline-block;
 
     }
+
 
     @media (max-width: $mobileLargePortrait) {
 
@@ -21,74 +34,56 @@
 
 }
 
+.navbar {
+
+  height: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+
+}
+
 .navbar-default {
 
-	background: none;
-	border: none;
+  background: none;
+  border: none;
 
   .navbar-nav {
 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+
     li {
+
+      padding: 0 15px 0 0;
+
+      &:last-child {
+
+        padding: 0;
+
+      }
 
       a {
 
-        color: $darkBlue;;
+        color: $darkBlue;
         transition: $fastTransition;
-        padding-top: 25px;
+        padding: 0;
 
         &:hover, &:focus {
 
-          color: $lightBlue;
+          color: lighten($lightBlue, 40%);
+
+        }
+
+        img {
+
+          padding: 10px 0;
+          height: auto;
 
         }
 
       }
-
-    }
-
-    .navbar-brand {
-
-      color: $darkBlue;
-      padding: 10px 15px 15px 15px;
-      height: auto;
-
-      img {
-
-        width: 30%;
-
-      }
-
-      &:hover, &:focus {
-
-        color: $lightBlue;
-
-      }
-
-      @media (max-width: $mobileLargeLandscape) {
-
-        padding: 12px 15px 5px 15px;
-
-      }
-
-      @media (max-width: $mobileLargePortrait) {
-
-        padding: 12px 15px 5px 15px;
-
-      }
-
-    }
-
-    @media (max-width: $mobileLargeLandscape) {
-
-      margin: 7.5px 0;
-      float: left;
-
-    }
-
-    @media (max-width: $mobileLargePortrait) {
-
-      margin: 7.5px 0;
-      float: left;
 
     }
 
@@ -101,6 +96,7 @@
       float: right;
 
     }
+
 
     @media (max-width: $mobileLargePortrait) {
 
@@ -120,8 +116,6 @@
 
   .navbar-toggle {
 
-    float: left;
-    margin-top: 20px;
     border: none;
     transition: $fastTransition;
 
@@ -131,7 +125,7 @@
 
       .icon-bar {
 
-        background: $darkBlue;
+        background: lighten($darkBlue, 40%);
  
       }
 
@@ -168,7 +162,49 @@
 
 .navbar-header {
 
+  display: flex;
+  align-items: center;
+  align-content: center;
   float: none;
+
+  div {
+
+    width: 100%;
+
+    .search {
+
+      display: flex;
+      align-items: center;
+      align-content: center;
+      width: auto;
+
+      div {
+
+        width: auto;
+
+      }
+
+    }
+
+  }
+
+  a {
+
+    .navbar-brand {
+
+      color: $darkBlue;
+      padding: 15px 0;
+      margin: 0;
+
+      &:hover, &:focus {
+
+        color: $lightBlue;
+
+      }
+
+    }
+
+  }
 
 }
 
@@ -414,6 +450,14 @@
           }
 
         }
+
+      }
+
+      .brand {
+
+        border-radius: 0;
+        margin: 50px auto;
+        width: auto;
 
       }
 
