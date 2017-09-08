@@ -3,61 +3,61 @@
 
 .grid {
 
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px -15px;
+
+  .item {
+
     display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 15px -15px;
+    min-height: 150px;
+    min-width: 15%;
+    margin: 15px;
+    padding: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
 
-    .item {
+    h1, h2, h3, h4 {
 
-      display: flex;
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      min-height: 150px;
-      min-width: 15%;
-      margin: 15px;
-      padding: 15px;
-      transition: all 0.3s;
-      cursor: pointer;
-
-      h1, h2, h3, h4 {
-
-          text-align: center;
-          font-weight: 400;
-          width: 100%;
-
-      }
-
-      p {
-
-          width: 100%;
-
-      }
-
-      a {
-
-          width: 100%;
-
-      }
-
-      i {
-
-          text-align: center;
-          width: 100%;
-          margin: 0 0 10px;
-
-      }
-
-      form {
-
+        text-align: center;
+        font-weight: 400;
         width: 100%;
-
-      }
 
     }
 
-    .course {
+    p {
+
+        width: 100%;
+
+    }
+
+    a {
+
+        width: 100%;
+
+    }
+
+    i {
+
+        text-align: center;
+        width: 100%;
+        margin: 0 0 10px;
+
+    }
+
+    form {
+
+      width: 100%;
+
+    }
+
+  }
+
+  .course {
 
     min-width: 25%;
     padding: 0;
@@ -74,17 +74,17 @@
 
     }
 
-    }
+  }
 
-    @media (min-width: $tabletPortrait) {
+  @media (min-width: $tabletPortrait) {
 
-      min-width: 50%;
+    min-width: 50%;
 
   }
 
   @media (min-width: $mobileLargePortrait) {
 
-      min-width: 100%;
+    min-width: 100%;
 
   }
 
