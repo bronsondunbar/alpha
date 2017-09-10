@@ -40,30 +40,93 @@
 
   <body>
 
+    <div class="navbar-content">
+      <div>
+        <a href="#" class="navbar-content-close-btn">&times;</a>
+
+        <img src="assets/imgs/brand.png" class="brand img-responsive hidden-lg hidden-md hidden-sm" />
+
+        <h1 class="navbar-title">Menu</h1>
+
+        <div class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" />
+          <a href="#">&times;</a>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <ul>
+              <li><a href="/level-one" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 1 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                <ul class="submenus submenu">
+                  <li><a href="/level-two" class="navbar-content-sub-item"><i class="fa fa-bar-chart" aria-hidden="true"></i> Level 1 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                    <ul class="submenus submenu">
+                      <li><a href="/level-three" class="navbar-content-sub-item"><i class="fa fa-bolt" aria-hidden="true"></i> Level 2 <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+                      <ul class="submenus submenu">
+                        <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Level 3</a></li>
+                        <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Level 3</a></li>
+                        <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i> Level 3</a></li>
+                        <li><a href="/level-two" class="go-back">Back</a></li>
+                      </ul>
+
+                      <li><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Level 2</a></li>
+                      <li><a href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Level 2</a></li>
+                      <li><a href="/level-one" class="go-back">Back</a></li>
+                    </ul>
+
+                  <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Level 1</a></li>
+                  <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Level 1</a></li>
+                  <li><a href="/menu" class="go-back">Back</a></li>
+                </ul>
+
+              <li><a href="#" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 2</a></li>
+              <li><a href="#" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 3</a></li>
+              <li><a href="#" class="navbar-content-item"><i class="fa fa-archive" aria-hidden="true"></i> Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="breadcrumbs"></ul>
+      </div>
+    </div>
+
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
 
-          <ul class="nav navbar-nav">
-            <li><a class="navbar-brand" href="index.html"><img src="assets/svg/brand.svg" /></a></li>
-          </ul>
+          <div>
+            <ul class="nav navbar-nav hidden-xs">
+              <li>
+                <a href="index.html">
+                  <img src="assets/imgs/brand.png" class="img-responsive" />
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Extra link</a></li>
-            <li>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </li>
-          </ul>
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <div class="search hidden-xs">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="text" />
+                  <a href="#">&times;</a>
+                </div>
+              </li>
+              <li><a href="#" data-toggle="modal" data-target="#supportModal">Support</a></li>
+              <li>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </li>
+            </ul>
 
-          <div class="search hidden-xs">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" />
-            <a href="#">&times;</a>
           </div>
         </div>
         
@@ -73,34 +136,32 @@
     <section role="post">
       <div class="container waypoint">
 
-        <div class="row">
+        <div class="grid">
 
-          <div class="col-md-6">
-            <div class="post-details">
-                <h2>Ut fringilla odio eu metus consequat accumsan</h2>
+          <div class="item post-details">
+            <div>
+              <h1>Ut fringilla odio eu metus consequat accumsan</h1>
 
-                <ul>
-                  <li><strong>Sed mattis risus dui</strong></li> 
-                </ul>
+              <ul>
+                <li><strong>Sed mattis risus dui</strong></li> 
+              </ul>
 
-                <a href="#" class="btn btn-default btn-lg">Call to action</a>
+              <a href="#" class="btn btn-default btn-lg">Call to action</a>
 
-                <p><a href="explore.html" data-toggle="tooltip" title="Click here!">Sed mattis risus dui</a></p>
+              <p><a href="explore.html" data-toggle="tooltip" title="Click here!">Sed mattis risus dui</a></p>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="post-preview">
-              <i class="fa fa-play-circle faa-pulse animated" aria-hidden="true"></i>
-              <img src="assets/imgs/image-1-4x3.png" class="img-responsive" />
-            </div>
+          <div class="item post-preview">
+            <i class="fa fa-play-circle faa-pulse animated" aria-hidden="true"></i>
+            <img src="assets/imgs/image-1-4x3.png" class="img-responsive" />
           </div>
 
         </div>
 
-        <div class="row">
+        <div class="grid">
 
-          <div class="col-md-12">
+          <div class="item">
             <h2>Vivamus porttitor fermentum nisl</h2>
 
             <p>Donec in augue tempor neque posuere aliquet. Vivamus porttitor fermentum nisl, ut euismod dolor cursus vel. Nunc porta tellus ex, eu venenatis neque viverra eget. Aenean sollicitudin eget neque eget faucibus. Cras rutrum fermentum odio, et viverra magna pharetra ac. Nunc at ante elementum elit pellentesque eleifend sed in enim. Aenean dui tortor, sodales a lobortis in, dignissim ac ante. Nulla elit massa, dapibus quis odio in, consectetur faucibus dolor. Etiam vel euismod quam. Aliquam erat volutpat. Aenean aliquam sit amet elit at aliquam.</p>
@@ -129,13 +190,17 @@
 
       <div class="container">
 
-        <div class="row">
+        <div class="grid">
 
-          <div class="col-md-12">
+          <div class="item">
+
+            <img src="assets/imgs/image-2-4x3.png" class="pull-left img-responsive" />
+
+          </div>
+
+          <div class="item">
 
             <h2>Nunc convallis auctor tristique</h2>
-
-            <img src="assets/imgs/image-2-4x3.png" class="pull-left figure img-responsive" />
 
             <h3>Cras rutrum</h3>
 
@@ -155,9 +220,9 @@
 
       <div class="container">
 
-        <div class="row">
+        <div class="grid">
 
-          <div class="col-md-12 reviews">
+          <div class="item reviews">
 
             <h2>Mauris eget</h2>
 

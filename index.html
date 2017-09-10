@@ -46,6 +46,8 @@
       <div>
         <a href="#" class="navbar-content-close-btn">&times;</a>
 
+        <img src="assets/imgs/brand.png" class="brand img-responsive hidden-lg hidden-md hidden-sm" />
+
         <h1 class="navbar-title">Menu</h1>
 
         <div class="search">
@@ -97,26 +99,36 @@
       <div class="container-fluid">
         <div class="navbar-header">
 
-          <ul class="nav navbar-nav">
-            <li><a class="navbar-brand" href="#"><img src="assets/svg/brand.svg" /></a></li>
-          </ul>
+          <div>
+            <ul class="nav navbar-nav hidden-xs">
+              <li>
+                <a href="index.html">
+                  <img src="assets/imgs/brand.png" class="img-responsive" />
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" data-toggle="modal" data-target="#myModal">Extra link</a></li>
-            <li>
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </li>
-          </ul>
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <div class="search hidden-xs">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="text" />
+                  <a href="#">&times;</a>
+                </div>
+              </li>
+              <li><a href="#" data-toggle="modal" data-target="#supportModal">Support</a></li>
+              <li>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </li>
+            </ul>
 
-          <div class="search hidden-xs">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" />
-            <a href="#">&times;</a>
           </div>
         </div>
         
@@ -154,60 +166,40 @@
         <div id="carousel-desktop" class="carousel slide hidden-sm hidden-xs" data-interval="false" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <div class="row">
+              <div class="grid">
 
-                <div class="col-md-3">
+                <div class="item post">
                   <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-1-4x3.png" class="img-responsive" alt="" />
+                    <img src="assets/imgs/image-1-16x9.png" class="img-responsive" alt="" />
 
-                      <div class="post-caption">
-                        <h4>Ut fringilla odio eu metus consequat accumsan</h4>
+                    <div class="post-caption">
+                      <h4>Ut fringilla odio eu metus consequat accumsan</h4>
 
-                        <a href="post.html" data-toggle="tooltip" title="Click here!" data-toggle="tooltip" title="Click here!" class="btn btn-default">Call to action</a>
-                      </div>
+                      <a href="post.html" data-toggle="tooltip" title="Click here!" data-toggle="tooltip" title="Click here!" class="btn btn-default">Call to action</a>
                     </div>
                   </a>
                 </div>
 
-                <div class="col-md-3">
+                <div class="item post">
                   <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-2-4x3.png" class="img-responsive" alt="" />
+                    <img src="assets/imgs/image-2-16x9.png" class="img-responsive" alt="" />
 
-                      <div class="post-caption">
-                        <h4>Nam tincidunt dui non elementum mattis</h4>
+                    <div class="post-caption">
+                      <h4>Nam tincidunt dui non elementum mattis</h4>
 
-                        <a href="post.html" class="btn btn-default">Call to action</a>
-                      </div>
+                      <a href="post.html" class="btn btn-default">Call to action</a>
                     </div>
                   </a>
                 </div>
 
-                <div class="col-md-3">
+                <div class="item post">
                   <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-3-4x3.png" class="img-responsive" alt="" />
+                    <img src="assets/imgs/image-3-16x9.png" class="img-responsive" alt="" />
 
-                      <div class="post-caption">
-                        <h4>Mauris porttitor lobortis ultricies</h4>
+                    <div class="post-caption">
+                      <h4>Mauris porttitor lobortis ultricies</h4>
 
-                        <a href="post.html" class="btn btn-default">Call to action</a>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-md-3">
-                  <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-4-4x3.png" class="img-responsive" alt="" />
-
-                      <div class="post-caption">
-                        <h4>Etiam venenatis sodales condimentum</h4>
-
-                        <a href="post.html" class="btn btn-default">Call to action</a>
-                      </div>
+                      <a href="post.html" class="btn btn-default">Call to action</a>
                     </div>
                   </a>
                 </div>
@@ -216,60 +208,40 @@
             </div>
 
             <div class="item">
-              <div class="row">
+              <div class="grid">
 
-                <div class="col-md-3">
+                <div class="item post">
                   <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-1-4x3.png" class="img-responsive" alt="" />
+                    <img src="assets/imgs/image-4-16x9.png" class="img-responsive" alt="" />
 
-                      <div class="post-caption">
-                        <h4>Ut fringilla odio eu metus consequat accumsan</h4>
+                    <div class="post-caption">
+                      <h4>Etiam venenatis sodales condimentum</h4>
 
-                        <a href="post.html" class="btn btn-default">Call to action</a>
-                      </div>
+                      <a href="post.html" class="btn btn-default">Call to action</a>
                     </div>
                   </a>
                 </div>
 
-                <div class="col-md-3">
+                <div class="item post">
                   <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-2-4x3.png" class="img-responsive" alt="" />
+                    <img src="assets/imgs/image-1-16x9.png" class="img-responsive" alt="" />
 
-                      <div class="post-caption">
-                        <h4>Nam tincidunt dui non elementum mattis</h4>
+                    <div class="post-caption">
+                      <h4>Ut fringilla odio eu metus consequat accumsan</h4>
 
-                        <a href="post.html" class="btn btn-default">Call to action</a>
-                      </div>
+                      <a href="post.html" class="btn btn-default">Call to action</a>
                     </div>
                   </a>
                 </div>
 
-                <div class="col-md-3">
+                <div class="item post">
                   <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-3-4x3.png" class="img-responsive" alt="" />
+                    <img src="assets/imgs/image-2-16x9.png" class="img-responsive" alt="" />
 
-                      <div class="post-caption">
-                        <h4>Mauris porttitor lobortis ultricies</h4>
+                    <div class="post-caption">
+                      <h4>Nam tincidunt dui non elementum mattis</h4>
 
-                        <a href="post.html" class="btn btn-default">Call to action</a>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-md-3">
-                  <a href="post.html">
-                    <div class="post">
-                      <img src="assets/imgs/image-4-4x3.png" class="img-responsive" alt="" />
-
-                      <div class="post-caption">
-                        <h4>Etiam venenatis sodales condimentum</h4>
-
-                        <a href="post.html" class="btn btn-default">Call to action</a>
-                      </div>
+                      <a href="post.html" class="btn btn-default">Call to action</a>
                     </div>
                   </a>
                 </div>
@@ -294,7 +266,7 @@
             <div class="item active">
               <a href="post.html">
                 <div class="post">
-                  <img src="assets/imgs/image-1-4x3.png" class="img-responsive" alt="" />
+                  <img src="assets/imgs/image-1-16x9.png" class="img-responsive" alt="" />
 
                   <div class="post-caption">
                     <h4>Ut fringilla odio eu metus consequat accumsan</h4>
@@ -308,7 +280,7 @@
             <div class="item">
               <a href="post.html">
                 <div class="post">
-                  <img src="assets/imgs/image-2-4x3.png" class="img-responsive" alt="" />
+                  <img src="assets/imgs/image-2-16x9.png" class="img-responsive" alt="" />
 
                   <div class="post-caption">
                     <h4>Nam tincidunt dui non elementum mattis</h4>
@@ -322,7 +294,7 @@
             <div class="item">
               <a href="post.html">
                 <div class="post">
-                  <img src="assets/imgs/image-3-4x3.png" class="img-responsive" alt="" />
+                  <img src="assets/imgs/image-3-16x9.png" class="img-responsive" alt="" />
 
                   <div class="post-caption">
                     <h4>Mauris porttitor lobortis ultricies</h4>
@@ -336,7 +308,7 @@
             <div class="item">
               <a href="post.html">
                 <div class="post">
-                  <img src="assets/imgs/image-4-4x3.png" class="img-responsive" alt="" />
+                  <img src="assets/imgs/image-4-16x9.png" class="img-responsive" alt="" />
 
                   <div class="post-caption">
                     <h4>Etiam venenatis sodales condimentum</h4>
