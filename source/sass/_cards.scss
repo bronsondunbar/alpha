@@ -5,6 +5,7 @@
 
 	position: relative;
 	transition: $fastTransition;
+	width: 100%;
 
 	&:hover {
 
@@ -26,8 +27,8 @@
 .course-card-caption {
 
 	padding: 15px;
-	background: $carouselCaptionBackgroundColour;
-	color: $carouselCaptionTextColour;
+	background: $carouselCaptionBackgroundColour !important;
+	color: $carouselCaptionTextColour !important;
 	text-align: center;
 	width: 100%;
 	transition: $fastTransition;
@@ -36,15 +37,23 @@
 
 		h4 {
 
-			color: $carouselCaptionTextColour;
+			color: $carouselCaptionTextColour !important;
 
 		}
 
 		p {
 
-			color: $carouselCaptionTextColour;			
+			color: $carouselCaptionTextColour !important;			
 
 		}
+
+	}
+
+	p {
+
+		color: $carouselCaptionTextColour !important;
+		text-align: center;
+		width: 100%;
 
 	}
 
@@ -60,9 +69,9 @@
 
 			.dropdown-toggle {
 
-				border: 1px solid $carouselCaptionTextColour;
+				border: 1px solid $carouselCaptionTextColour !important;
 				width: 100%;
-				color: $carouselCaptionTextColour;
+				color: $carouselCaptionTextColour !important;
 
 				&:hover, &:focus {
 
@@ -83,7 +92,6 @@
 
 		.dropdown-menu {
 
-			// margin: 0 auto;
 			width: 50%;
 			left: 49%;
   			right: auto;
@@ -99,7 +107,7 @@
 				&:focus {
 
 					background: none;
-					border: 1px solid $carouselCaptionTextColour;
+					border: 1px solid $carouselCaptionTextColour !important;
 
 				}
 
