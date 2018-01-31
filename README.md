@@ -8,6 +8,9 @@ https://codekitapp.com/
 
 Preview https://bronsondunbar.github.io/alpha-template/
 
+WordPress https://github.com/bronsondunbar/alpha-wp
+React Redux https://github.com/bronsondunbar/alpha-template-react-redux
+
 ## License
 
 MIT License
