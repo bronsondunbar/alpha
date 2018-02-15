@@ -9790,8 +9790,6 @@ body {
       list-style-type: none;
       margin: 0 -15px 0 -5px;
       padding: 0;
-      -webkit-box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
-              box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
       /* Level 1 */ }
       .navbar-content div div div ul .active {
         background: #06A9E1;
@@ -9807,8 +9805,6 @@ body {
         padding: 0;
         background: #ffffff;
         border-right: 1px solid #e5e5e5;
-        -webkit-box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
-                box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
         /* Level 2 */ }
         .navbar-content div div div ul ul ul {
           position: absolute;
@@ -9820,8 +9816,6 @@ body {
           padding: 0;
           background: #06A9E1;
           border-right: 1px solid #e5e5e5;
-          -webkit-box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
-                  box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
           /* Level 3 */ }
           .navbar-content div div div ul ul ul ul {
             position: absolute;
@@ -9832,9 +9826,7 @@ body {
             margin: 0;
             padding: 0;
             background: #e5e5e5;
-            border-right: 1px solid #ffffff;
-            -webkit-box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31);
-                    box-shadow: inset -12px 0px 23px -14px rgba(0, 0, 0, 0.31); }
+            border-right: 1px solid #ffffff; }
             .navbar-content div div div ul ul ul ul li {
               border-bottom: 1px solid #ffffff; }
               .navbar-content div div div ul ul ul ul li a {
@@ -9889,7 +9881,7 @@ body {
           .navbar-content div div div ul li a .fa:nth-of-type(1) {
             padding: 0 10px 0 0; }
           .navbar-content div div div ul li a .fa-chevron-right {
-            margin: 3px 30px 0 0;
+            margin: 3px 14px 0 0;
             float: right; }
           .navbar-content div div div ul li a:hover, .navbar-content div div div ul li a:focus {
             color: #06A9E1; }
