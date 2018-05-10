@@ -8,8 +8,9 @@ https://codekitapp.com/
 
 Preview https://bronsondunbar.github.io/alpha-template/
 
-WordPress https://github.com/bronsondunbar/alpha-wp
-React Redux https://github.com/bronsondunbar/alpha-template-react-redux
+<a href="https://www.becomeawppro.com/alpha-wp-free/">WordPress theme</a>
+
+<a href="https://github.com/bronsondunbar/alpha-template-react-redux">React template</a>
 
 ## License
 
