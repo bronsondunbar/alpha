@@ -10,7 +10,7 @@ Preview https://bronsondunbar.github.io/alpha-template/
 
 <a href="https://www.becomeawppro.com/alpha-wp-free/">WordPress theme</a>
 
-<a href="https://github.com/bronsondunbar/alpha-template-react-redux">React template</a>
+<a href="https://github.com/bronsondunbar/alpha-template-react">React template</a>
 
 ## License
 
