@@ -1,7 +1,5 @@
 # Alpha template
 
-HTML5, CSS and JQuery website template
-
 Template can be setup using CodeKit
 
 https://codekitapp.com/
@@ -16,7 +14,7 @@ Preview https://bronsondunbar.github.io/alpha-template/
 
 MIT License
 
-Copyright (c) 2018 Bronson Dunbar www.bronsondunbar.com
+Copyright (c) 2020 Bronson Dunbar www.bronsondunbar.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
